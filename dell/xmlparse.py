@@ -533,6 +533,7 @@ def files_processing(inputdir, outputdir, workbook, step=None, ip=None):
                 print('{} done. Processed {}, files'.format(service_tag, counter))
 
 def report_analyze(currep):
+    print("currep>>>",currep)
     result = {}
     rep_type = currep['rep_type']
     #building up data structure as following:
@@ -1005,7 +1006,7 @@ def report(xml):
 
     #building data structure
     resData = {}
-    print('>>',results)
+    # print('>>',results)
     for r in results:
         for key in r:
             #generating entries only for data keys (not for 'excluded_for_validation' "input" key or something else)
@@ -1022,6 +1023,8 @@ def report(xml):
                     validated = 0
                 resData[key] = {'data': r[key], 'valid': validated}
     resData = {'rep_type': rep_type, 'service_tag': service_tag, 'report' : resData}
+    # 'HDD slot pop.': {'data': ['0', '1', '2', '3', '4', '5', '6', '7'] vs HDD slot pop.': {'data': ['0', '1']
+    print("res>>>",resData)
     return resData
 
 # def sendrep(sysserial):
