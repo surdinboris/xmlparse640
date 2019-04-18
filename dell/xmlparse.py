@@ -45,7 +45,7 @@ additional_conf_collect.update({"Disk.Virtual.0:RAID.Integrated.1-1": ['Name', '
 # summary object init
 summary = {}
 errors={}
-failoverresult= {'PDU-{}'.format(num): {} for num, pdu in enumerate(pdus, 1)}
+failoverresult= {'PDU-{}'.format(num): {'result': 'na'} for num, pdu in enumerate(pdus, 1)}
 #harware collection constructor
 hw_collect=[]
 hw_collect.append({'displayname': 'ServiceTag', 'classname': 'DCIM_SystemView', 'name': 'ServiceTag', 'excluded_for_validation': 2})
@@ -443,7 +443,7 @@ def main(argv):
             writesummary(workbook, summary_report)
             #reinit of data placeholders
             summary = {}
-            failoverresult = {'PDU-{}'.format(num): {} for num, pdu in enumerate(pdus, 1)}
+            failoverresult = {'PDU-{}'.format(num): {'result': 'na'} for num, pdu in enumerate(pdus, 1)}
             print_to_gui(' - Process finished. Please inspect {}'.format(repname))
 
 
@@ -458,7 +458,7 @@ def main(argv):
             writesummary(workbook, summary_report)
             #reinit of data placeholders
             summary = {}
-            failoverresult = {'PDU-{}'.format(num): {} for num, pdu in enumerate(pdus, 1)}
+            # failoverresult = {'PDU-{}'.format(num): {} for num, pdu in enumerate(pdus, 1)}
             print_to_gui(' - Process finished. Please inspect {}'.format(repname))
         workbook.close()
         if len(errors) > 0:
@@ -548,6 +548,7 @@ def report_analyze(currep):
         master = report(os.path.join(os.getcwd(), configuration_golden))['report']
         print('Master report generated from {} \n'.format(os.path.join(os.getcwd(), configuration_golden)))
 
+#rewrite this to comparation based on master report to spot missing harware
     #extracting report
     currep = currep['report']
     for record in currep:
@@ -609,6 +610,7 @@ def unpack(latest_file):
                     return(os.path.join(epath,f))
 
 def writesummary(workbook,worksheet):
+    #print(summary)
 
     maxwidth = {}
     # creating xls file
@@ -975,7 +977,7 @@ def report(xml):
     service_tag = getdata(xml, classname='DCIM_SystemView', name='ServiceTag')
     if len(service_tag) == 1 and len(service_tag[0]) == 7:
         service_tag=service_tag[0]
-        print('hwinventory configuration data for {} discovered {}'.format(service_tag, xml))
+        print('hwinventory  data for {} discovered {}'.format(service_tag, xml))
         rep_type = 'hwinvent_report'
         for hwrequest in hw_collect:
 
@@ -1003,6 +1005,7 @@ def report(xml):
 
     #building data structure
     resData = {}
+    print('>>',results)
     for r in results:
         for key in r:
             #generating entries only for data keys (not for 'excluded_for_validation' "input" key or something else)
