@@ -557,8 +557,8 @@ def report_analyze(currep):
         #in case of record availalable in master file
         data_per = []
         if currep[record]['valid'] == 2:
-            for data_item in currep[record]['data']:
-                data_per.append({data_item:2,'golden': 'dynamic field'})
+            for master_item in currep[record]['data']:
+                data_per.append({master_item:2,'golden': 'dynamic field'})
             result[record] = data_per
             continue
         try:
@@ -566,17 +566,19 @@ def report_analyze(currep):
             #print(record,'>>>>>>>m', master_record, '>>>>>>>c', currep[record])
 
             data_per = []
-            for i, data_item in enumerate(currep[record]['data']):
+            for i, master_item in enumerate(master[record]['data']):
                 try:
-                    master_val = master[record]['data'][i]
+                    # ?
+                    curr_val = currep[record]['data'][i]
                 except IndexError:
-                    master_val = 'not present in golden configuration'
-                data_per.append({data_item: int(data_item == master_val), 'golden': master_val})
+                    curr_val = 'n/a'
+                data_per.append({curr_val: int(master_item == curr_val), 'golden': master_item})
+                # print(int(master_item == curr_val),' ',  master_item, ' ', curr_val)
             result[record] = data_per
                #print('unequal', master_record['data'], current[record]['data'],'\n')
                 #old result[record] = {'data': current[record]['data'], 'valid': 0}
         except KeyError:
-            #if failed to find whole master values branch in master file - assign specific attribute
+            #if failed to find whole  values branch in master file - assign specific attribute
             data_per = []
             for data_item in currep[record]['data']:
                 data_per.append({data_item: 5, 'golden': 'n/a'})
