@@ -557,7 +557,7 @@ def report_analyze(currep):
 
     for record in master:
         data_per = []
-        #checking if value present in verifyed file
+        #checking if value present in verified file
         try:
             currep[record]
         except KeyError:
@@ -567,6 +567,7 @@ def report_analyze(currep):
                 data_per.append({curr_item: 5, 'golden': master_item})
                 result[record] = data_per
             continue
+
 
             # if failed to find whole  values branch in master file - assign specific attribute
             # for data_item in master[record]['data']:
@@ -585,6 +586,7 @@ def report_analyze(currep):
             # master_record = master[record]
             # print(record,'>>>>>>>m', master_record, '>>>>>>>c', currep[record])
             # data_per = []
+        #checking for missing  subitems
         for i, master_item in enumerate(master[record]['data']):
             try:
                 curr_val = currep[record]['data'][i]
@@ -595,17 +597,28 @@ def report_analyze(currep):
             else:
                 data_per.append({curr_val: int(master_item == curr_val), 'golden': master_item})
             # print(int(master_item == curr_val),' ',  master_item, ' ', curr_val)
-        #checking for extra hw?
+        #checking for extra  subitems
         for i, curr_item in enumerate(currep[record]['data']):
             try:
                 #master_val = master[record]['data'][i]
                 curr_val = master[record]['data'][i]
             except IndexError:
                 # print('exsseeive data detected',curr_val)
-                data_per.append({curr_val: 5, 'golden': curr_item})
+                data_per.append({'failed': 5, 'golden': curr_item})
         #     # print(int(master_item == curr_val),' ',  master_item, ' ', curr_val)
-
         result[record] = data_per
+
+    #collecting exccesive data in verified report
+    for record in currep:
+        data_per = []
+        try:
+            master[record]
+        except KeyError:
+            for i, curr_item in enumerate(currep[record]['data']):
+                # curr_item = currep[record]['data'][i]
+                data_per.append({'failed': 4, 'golden': curr_item})
+            result[record] = data_per
+
            #print('unequal', master_record['data'], current[record]['data'],'\n')
             #old result[record] = {'data': current[record]['data'], 'valid': 0}
             #continue
@@ -965,11 +978,10 @@ def writetoxlsx(report_file_name, cur_report, workbook):
                         worksheet.write(coords, toStr(data, coords), black_cell)
                     elif valid == 4:
                         worksheet.write(coords, toStr(data, coords), red_cell)
-                        worksheet.write_comment(coords, 'additional parameter found')
+                        worksheet.write_comment(coords, 'parameter not found')
                     elif valid == 5:
                         worksheet.write(coords, toStr(data, coords), orange_cell)
-                        worksheet.write_comment(coords, 'parameter not found in golden conf.')
-
+                        worksheet.write_comment(coords, 'not presented in golden with value  \"{}\" was found'.format(golden))
 
         #print(maxwidth)
     if geometry == 'rows':
@@ -994,7 +1006,7 @@ def writetoxlsx(report_file_name, cur_report, workbook):
                             worksheet.write(coords, toStr(data, coords), black_cell)
                         elif valid == 4:
                             worksheet.write(coords, toStr(data, coords),orange_cell)
-                            worksheet.write_comment(coords, 'additional data found , should be {}'.format(golden))
+                            worksheet.write_comment(coords, 'additional data was found with value \"{}\"'.format(golden))
                         elif valid == 5:
                             worksheet.write(coords, toStr(data, coords), red_cell)
                             worksheet.write_comment(coords, 'data not found, should be {}'.format(golden))

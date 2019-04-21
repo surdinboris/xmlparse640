@@ -4,6 +4,7 @@
 <!--Exported configuration does not contain FC-HBA data as the presence of the appropriate cards could not be detected!-->
 <Component FQDD="iDRAC.Embedded.1">
  <!--<Attribute Name="IPMILan.1#Enable">Disabled</Attribute>-->
+  <Attribute Name="IPMILan.1#PrivLimitExt">External par</Attribute>
  <Attribute Name="IPMILan.1#PrivLimit">Administrator</Attribute>
  <Attribute Name="IPMILan.1#EncryptionKey">0000000000000000000000000000000000000000</Attribute>
  <Attribute Name="IPMILan.1#CommunityName">public</Attribute>

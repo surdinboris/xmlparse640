@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1d34c35-52ba-45e9-8c93-aba813ad7a3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline/golden_640_all.xml" beforeDir="false" afterPath="$PROJECT_DIR$/offline/golden_640_all.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmlparse.py" beforeDir="false" afterPath="$PROJECT_DIR$/xmlparse.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,13 +17,34 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xmlparse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="574" column="41" selection-start-line="574" selection-start-column="41" selection-end-line="574" selection-end-column="41" />
+            <state relative-caret-position="445">
+              <caret line="980" column="78" selection-start-line="980" selection-start-column="78" selection-end-line="980" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ConfigurationInventory.golden">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/offline/golden_640_all.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="615" column="40" selection-start-line="615" selection-start-column="18" selection-end-line="615" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>not equal</find>
+      <find>SupportInfo.1#HelpDesk</find>
+      <find>orange_cell</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -30,6 +52,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/offline/golden_640_all.xml" />
         <option value="$PROJECT_DIR$/xmlparse.py" />
       </list>
     </option>
@@ -55,6 +78,11 @@
             <path>
               <item name="dell" type="b2602c69:ProjectViewProjectNode" />
               <item name="dell" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dell" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dell" type="462c0819:PsiDirectoryNode" />
+              <item name="offline" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -132,7 +160,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40288714" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18372704" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -143,10 +171,20 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ConfigurationInventory.golden">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offline/golden_640_all.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="615" column="40" selection-start-line="615" selection-start-column="18" selection-end-line="615" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/xmlparse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="574" column="41" selection-start-line="574" selection-start-column="41" selection-end-line="574" selection-end-column="41" />
+        <state relative-caret-position="445">
+          <caret line="980" column="78" selection-start-line="980" selection-start-column="78" selection-end-line="980" selection-end-column="78" />
         </state>
       </provider>
     </entry>
