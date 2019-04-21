@@ -3,13 +3,13 @@
 <!--Exported configuration may contain commented attributes. Attributes may be commented due to dependency, destructive nature, preserving server identity or for security reasons.-->
 <!--Exported configuration does not contain FC-HBA data as the presence of the appropriate cards could not be detected!-->
 <Component FQDD="iDRAC.Embedded.1">
- <!--<Attribute Name="IPMILan.1#Enable">Disabled</Attribute>-->
+ <Attribute Name="IPMILan.1#Enable">Disabled</Attribute>
  <Attribute Name="IPMILan.1#PrivLimit">Administrator</Attribute>
  <Attribute Name="IPMILan.1#EncryptionKey">0000000000000000000000000000000000000000</Attribute>
  <Attribute Name="IPMILan.1#CommunityName">public</Attribute>
  <Attribute Name="IPMILan.1#AlertEnable">Disabled</Attribute>
  <Attribute Name="Users.2#UserName">root</Attribute>
- <Attribute Name="Users.2#Password">calvin</Attribute>
+ <Attribute Name="Users.2#Password">wildcat1</Attribute>
  <Attribute Name="Users.2#Privilege">511</Attribute>
  <Attribute Name="Users.2#IpmiLanPrivilege">Administrator</Attribute>
  <Attribute Name="Users.2#IpmiSerialPrivilege">Administrator</Attribute>
@@ -406,9 +406,9 @@
  <Attribute Name="IPv6.1#AutoConfig">Enabled</Attribute>
  <!-- <Attribute Name="NICStatic.1#DNSDomainName"></Attribute> -->
  <Attribute Name="NICStatic.1#DNSDomainFromDHCP">Disabled</Attribute>
- <Attribute Name="IPv4Static.1#Address">10.48.228.1</Attribute>
+ <!--<Attribute Name="IPv4Static.1#Address">10.48.228.1</Attribute> -->
  <Attribute Name="IPv4Static.1#Netmask">255.255.224.0</Attribute>
- <Attribute Name="IPv4Static.1#Gateway">10.48.228.254</Attribute>
+ <!--<Attribute Name="IPv4Static.1#Gateway">10.160.255.254</Attribute> -->
  <Attribute Name="IPv4Static.1#DNS1">0.0.0.0</Attribute>
  <Attribute Name="IPv4Static.1#DNS2">0.0.0.0</Attribute>
  <Attribute Name="IPv4Static.1#DNSFromDHCP">Disabled</Attribute>
@@ -547,7 +547,6 @@
 </Component>
 
 <Component FQDD="System.Embedded.1">
-  <Attribute Name="LCD.Test#Configuration">Test</Attribute>
  <Attribute Name="LCD.1#Configuration">OS System Name</Attribute>
  <!-- <Attribute Name="LCD.1#UserDefinedString"></Attribute> -->
  <Attribute Name="LCD.1#vConsoleIndication">Disabled</Attribute>

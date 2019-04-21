@@ -15,7 +15,7 @@
 </Component>
 
 <Component FQDD="System.Embedded.1"> <Attribute Name="LCD.1#Configuration">OS System Name</Attribute>
- <!-- <Attribute Name="LCD.1#UserDefinedString"></Attribute> -->
+  <Attribute Name="LCD.1#UserDefinedString">test</Attribute>
  <Attribute Name="LCD.1#vConsoleIndication">Disabled</Attribute>
  <Attribute Name="LCD.1#QualifierWatt">Watts</Attribute>
  <Attribute Name="LCD.1#QualifierTemp">C</Attribute>

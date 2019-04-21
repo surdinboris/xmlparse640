@@ -554,64 +554,49 @@ def report_analyze(currep):
     currep = currep['report']
 
     #print('currep>>>',currep)
-
-    for record in master:
-        data_per = []
-        #checking if value present in verifyed file
-        try:
-            currep[record]
-        except KeyError:
-            for i, master_item in enumerate(master[record]['data']):
-                master_item = master[record]['data'][i]
-                curr_item='failed'
-                data_per.append({curr_item: 5, 'golden': master_item})
-                result[record] = data_per
-            continue
-
-            # if failed to find whole  values branch in master file - assign specific attribute
-            # for data_item in master[record]['data']:
-            #     data_per.append({data_item: 5, 'golden': 'n/a'})
-            # result[record] = data_per
-
+    for record in currep:
         #in case of record availalable in master file
-        # print(currep[record])
+        data_per = []
         if currep[record]['valid'] == 2:
             #in case of dynamic vals
             for curr_item in currep[record]['data']:
                 data_per.append({curr_item:2,'golden': 'dynamic field'})
             result[record] = data_per
             continue
-        #data comparison
-            # master_record = master[record]
+        #in case of data comparation
+        try:
+            master_record = master[record]
             # print(record,'>>>>>>>m', master_record, '>>>>>>>c', currep[record])
             # data_per = []
-        for i, master_item in enumerate(master[record]['data']):
-            try:
-                curr_val = currep[record]['data'][i]
-            except IndexError:
-                curr_val = 'n/a'
-            if curr_val == 'n/a':
-                data_per.append({curr_val: 4, 'golden': master_item})
-            else:
+            for i, master_item in enumerate(master[record]['data']):
+                try:
+                    curr_val = currep[record]['data'][i]
+                except IndexError:
+                    curr_val = 'n/a'
                 data_per.append({curr_val: int(master_item == curr_val), 'golden': master_item})
-            # print(int(master_item == curr_val),' ',  master_item, ' ', curr_val)
-        #checking for extra hw?
-        for i, curr_item in enumerate(currep[record]['data']):
-            try:
-                #master_val = master[record]['data'][i]
-                curr_val = master[record]['data'][i]
-            except IndexError:
-                # print('exsseeive data detected',curr_val)
-                data_per.append({curr_val: 5, 'golden': curr_item})
-        #     # print(int(master_item == curr_val),' ',  master_item, ' ', curr_val)
+                # print(int(master_item == curr_val),' ',  master_item, ' ', curr_val)
+            #checking for extra hw
+            for i, curr_item in enumerate(currep[record]['data']):
+                try:
+                    master_val = master[record]['data'][i]
+                    curr_val = currep[record]['data'][i]
+                except IndexError:
+                    # print('exsseeive data detected',curr_val)
+                    data_per.append({curr_val: 0, 'golden': "n/a"})
+            #     # print(int(master_item == curr_val),' ',  master_item, ' ', curr_val)
 
-        result[record] = data_per
-           #print('unequal', master_record['data'], current[record]['data'],'\n')
-            #old result[record] = {'data': current[record]['data'], 'valid': 0}
-            #continue
-        #result[record] = {'data':record['data'], 'valid': 5}
-        #print(master_record)
-# print(result)
+            result[record] = data_per
+               #print('unequal', master_record['data'], current[record]['data'],'\n')
+                #old result[record] = {'data': current[record]['data'], 'valid': 0}
+        except KeyError:
+            #if failed to find whole  values branch in master file - assign specific attribute
+            for data_item in currep[record]['data']:
+                data_per.append({data_item: 5, 'golden': 'n/a'})
+            result[record] = data_per
+                #continue
+            #result[record] = {'data':record['data'], 'valid': 5}
+            #print(master_record)
+    # print(result)
     return {'rep_type': rep_type, 'report': result}
 
 
@@ -963,13 +948,9 @@ def writetoxlsx(report_file_name, cur_report, workbook):
                         worksheet.write(coords, toStr('pass', coords), green_cell)
                     elif valid == 2:
                         worksheet.write(coords, toStr(data, coords), black_cell)
-                    elif valid == 4:
-                        worksheet.write(coords, toStr(data, coords), red_cell)
-                        worksheet.write_comment(coords, 'additional parameter found')
                     elif valid == 5:
                         worksheet.write(coords, toStr(data, coords), orange_cell)
-                        worksheet.write_comment(coords, 'parameter not found in golden conf.')
-
+                        worksheet.write_comment(coords, 'data not found in master, should be {}'.format(golden))
 
         #print(maxwidth)
     if geometry == 'rows':
@@ -992,12 +973,9 @@ def writetoxlsx(report_file_name, cur_report, workbook):
                             worksheet.write(coords, toStr('passed', coords), green_cell)
                         elif valid == 2:
                             worksheet.write(coords, toStr(data, coords), black_cell)
-                        elif valid == 4:
-                            worksheet.write(coords, toStr(data, coords),orange_cell)
-                            worksheet.write_comment(coords, 'additional data found , should be {}'.format(golden))
                         elif valid == 5:
-                            worksheet.write(coords, toStr(data, coords), red_cell)
-                            worksheet.write_comment(coords, 'data not found, should be {}'.format(golden))
+                            worksheet.write(coords, toStr(data, coords),orange_cell)
+                            worksheet.write_comment(coords, 'data not found in master, should be {}'.format(golden))
 
     #sheet setup for better look
     for m in maxwidth:
