@@ -747,6 +747,7 @@ def writesummary(workbook,worksheet):
             continue
 
         correction=0
+
         for ind, hwfamily in enumerate(reps['hwinvent_report'],1):
             ind = ind+correction
             #writing head
@@ -754,14 +755,16 @@ def writesummary(workbook,worksheet):
             hwfamily_pass = 1
             for i, hwitem in enumerate(hw_items,maxheight):
                 corrflag = False
+
                 for key, value in hwitem.items():
+                    print('>>',key, value)
                     if key != 'golden':
                         if value == 1:
                             # writing head
                             if maxheight == 2:
                                 coords = '{}1'.format(colnum_string(ind))
                                 worksheet.write(coords, toStr(hwfamily, coords), header_cell)
-                        elif value == 0:
+                        elif value in [0,5,4]:
                             hwfamily_pass=0
                             if maxheight == 2:
                                 coords = '{}1'.format(colnum_string(ind))
