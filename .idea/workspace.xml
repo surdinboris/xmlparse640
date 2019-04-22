@@ -2,29 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8585d4ec-eb38-479f-a740-120601a36ab2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_12-34-19.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_12-36-06.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_12-50-02.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_12-51-01.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_12-55-03.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_13-12-30.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_13-15-32.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_13-18-02.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_13-21-25.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_14-44-49.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_16-14-06.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_16-15-53.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_16-33-16.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_16-34-46.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_16-38-16.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_16-44-37.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_16-45-35.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_16-52-42.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_16-55-24.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_16-59-03.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/summary_21042019_17-02-25.xlsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dell/xmlparse.py" afterPath="$PROJECT_DIR$/dell/xmlparse.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/.~lock.summary_21042019_16-34-46.xlsx#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/.~lock.summary_21042019_16-38-16.xlsx#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/.~lock.summary_21042019_16-44-37.xlsx#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/.~lock.summary_21042019_16-45-35.xlsx#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/.~lock.summary_21042019_16-52-42.xlsx#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/.~lock.summary_21042019_16-55-24.xlsx#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/.~lock.summary_21042019_16-59-03.xlsx#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/.~lock.summary_21042019_17-02-25.xlsx#" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
