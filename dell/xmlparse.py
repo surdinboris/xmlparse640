@@ -564,15 +564,9 @@ def report_analyze(currep):
             for i, master_item in enumerate(master[record]['data']):
                 master_item = master[record]['data'][i]
                 curr_item='failed'
-                data_per.append({curr_item: 5, 'golden': master_item})
+                data_per.append({curr_item: 4, 'golden': master_item})
                 result[record] = data_per
             continue
-
-
-            # if failed to find whole  values branch in master file - assign specific attribute
-            # for data_item in master[record]['data']:
-            #     data_per.append({data_item: 5, 'golden': 'n/a'})
-            # result[record] = data_per
 
         #in case of record availalable in master file
         # print(currep[record])
@@ -583,9 +577,6 @@ def report_analyze(currep):
             result[record] = data_per
             continue
         #data comparison
-            # master_record = master[record]
-            # print(record,'>>>>>>>m', master_record, '>>>>>>>c', currep[record])
-            # data_per = []
         #checking for missing  subitems
         for i, master_item in enumerate(master[record]['data']):
             try:
@@ -604,7 +595,7 @@ def report_analyze(currep):
                 curr_val = master[record]['data'][i]
             except IndexError:
                 # print('exsseeive data detected',curr_val)
-                data_per.append({'failed': 5, 'golden': curr_item})
+                data_per.append({'additional': 5, 'golden': curr_item})
         #     # print(int(master_item == curr_val),' ',  master_item, ' ', curr_val)
         result[record] = data_per
 
@@ -616,7 +607,7 @@ def report_analyze(currep):
         except KeyError:
             for i, curr_item in enumerate(currep[record]['data']):
                 # curr_item = currep[record]['data'][i]
-                data_per.append({'failed': 4, 'golden': curr_item})
+                data_per.append({'additional': 5, 'golden': curr_item})
             result[record] = data_per
 
            #print('unequal', master_record['data'], current[record]['data'],'\n')
@@ -757,7 +748,7 @@ def writesummary(workbook,worksheet):
                 corrflag = False
 
                 for key, value in hwitem.items():
-                    print('>>',key, value)
+                    # print('>>',key, value)
                     if key != 'golden':
                         if value == 1:
                             # writing head
@@ -1008,11 +999,12 @@ def writetoxlsx(report_file_name, cur_report, workbook):
                         elif valid == 2:
                             worksheet.write(coords, toStr(data, coords), black_cell)
                         elif valid == 4:
-                            worksheet.write(coords, toStr(data, coords),orange_cell)
-                            worksheet.write_comment(coords, 'additional data was found with value \"{}\"'.format(golden))
-                        elif valid == 5:
                             worksheet.write(coords, toStr(data, coords), red_cell)
                             worksheet.write_comment(coords, 'data not found, should be {}'.format(golden))
+                        elif valid == 5:
+                            worksheet.write(coords, toStr(data, coords),orange_cell)
+                            worksheet.write_comment(coords, 'additional data was found with value \"{}\"'.format(golden))
+
 
     #sheet setup for better look
     for m in maxwidth:
