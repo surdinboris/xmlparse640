@@ -56,7 +56,7 @@ hw_collect.append({'displayname': 'PCI device', 'classname': 'DCIM_PCIDeviceView
 hw_collect.append({'displayname': 'Memory tot.size', 'classname': 'DCIM_SystemView', 'name': 'SysMemTotalSize', 'excluded_for_validation': 0})
 hw_collect.append({'displayname': 'Memory serial', 'classname': 'DCIM_MemoryView', 'name': 'SerialNumber', 'excluded_for_validation': 2})
 hw_collect.append({'displayname': 'Memory P/Ns', 'classname': 'DCIM_MemoryView', 'name': 'PartNumber', 'excluded_for_validation': 0})
-hw_collect.append({'displayname': 'Memory slot', 'classname': 'DCIM_MemoryView', 'name': 'FQDD', 'excluded_for_validation': 0})
+hw_collect.append({'displayname': 'Memory slot', 'classname': 'DCIM_MemoryView', 'name': 'InstanceID', 'excluded_for_validation': 0})
 hw_collect.append({'displayname': 'HDD serial', 'classname': 'DCIM_PhysicalDiskView', 'name': 'SerialNumber', 'excluded_for_validation': 2})
 hw_collect.append({'displayname': 'HDD model', 'classname': 'DCIM_PhysicalDiskView', 'name': 'Model', 'excluded_for_validation': 0})
 hw_collect.append({'displayname': 'HDD fw', 'classname': 'DCIM_PhysicalDiskView', 'name': 'Revision', 'excluded_for_validation': 0})
@@ -114,14 +114,21 @@ def getdata(xml,classname='', name=''):
                 for prop in props:
                     if prop.attrib['NAME'] == name:
                         val = prop.find('VALUE').text
+
+
                     elif prop.attrib['NAME'] == "FQDD":
                         fqdd = prop.find('VALUE').text
+                        # val = prop.find('VALUE').text
+                        #in case of DIMM.SocketXX - adding to
+                        # hwinventory[fqdd] = val
+                        # print('fqdd',fqdd)
 
                 hwinventory[fqdd] = val
 
         hwinventory=dict(sorted(hwinventory.items()))
         if len(hwinventory) == 0:
             return ['n/a']
+        # print('target format',list(hwinventory.values()))
         return list(hwinventory.values())
     #router to use both two types of hwinventory retrieved via web interface or
     #racadmin and additional support for segregate requests configuration parsing (possibly not needed)
@@ -761,7 +768,7 @@ def writesummary(workbook,worksheet):
                                 coords = '{}1'.format(colnum_string(ind))
                                 worksheet.write(coords, toStr(hwfamily, coords), header_cell)
 
-                            #print(ind,v ,hw_items)
+                            # print('>>',hwfamily, hwitem)
                             hw_error.append('Wrong value: of {},got {}  should be  {} '.format(hwfamily, key, hwitem['golden']))
                         elif value == 2:
                             hwfamily_pass = 2
@@ -972,7 +979,7 @@ def writetoxlsx(report_file_name, cur_report, workbook):
                         worksheet.write(coords, toStr(data, coords), black_cell)
                     elif valid == 4:
                         worksheet.write(coords, toStr(data, coords), red_cell)
-                        worksheet.write_comment(coords, 'parameter not found')
+                        worksheet.write_comment(coords, 'parameter not found \"{}\"'.format(golden))
                     elif valid == 5:
                         worksheet.write(coords, toStr(data, coords), orange_cell)
                         worksheet.write_comment(coords, 'not presented in golden with value  \"{}\" was found'.format(golden))
@@ -1026,6 +1033,7 @@ def report(xml):
 
             results.append({hwrequest['displayname']: getdata(xml, classname=hwrequest['classname'], name=hwrequest['name']),
                             'excluded_for_validation': hwrequest['excluded_for_validation']})
+            # print('+++',getdata(xml, classname=hwrequest['classname'], name=hwrequest['name']))
         # compare 1=to be validated, 0=without validation(data not to be validated - serial numbers, et.c.)
     #probing for configuration data
     else:

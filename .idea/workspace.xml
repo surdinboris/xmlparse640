@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8585d4ec-eb38-479f-a740-120601a36ab2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/ConfigurationInventory.golden640" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/HardwareInventory.golden640" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/r640_bios_golden.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dell/ConfigurationInventory.golden" afterPath="$PROJECT_DIR$/dell/ConfigurationInventory.golden" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dell/HardwareInventory.golden" afterPath="$PROJECT_DIR$/dell/HardwareInventory.golden" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dell/HardwareInventory.golden640" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/xmlparse_good.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dell/HardwareInventory.golden_630" afterPath="$PROJECT_DIR$/dell/HardwareInventory.golden" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dell/xmlparse.py" afterPath="$PROJECT_DIR$/dell/xmlparse.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +17,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/xmlparse$GetFirmwareInventoryREDFISH.coverage" NAME="GetFirmwareInventoryREDFISH Coverage Results" MODIFIED="1545143364065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dell/iDRAC-Redfish-Scripting/Redfish Python" />
-    <SUITE FILE_PATH="coverage/xmlparse640$xmlparse.coverage" NAME="xmlparse Coverage Results" MODIFIED="1555922367104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dell" />
+    <SUITE FILE_PATH="coverage/xmlparse640$xmlparse.coverage" NAME="xmlparse Coverage Results" MODIFIED="1555928742986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dell" />
     <SUITE FILE_PATH="coverage/xmlparse$GetIdracLcSystemAttributesREDFISH.coverage" NAME="GetIdracLcSystemAttributesREDFISH Coverage Results" MODIFIED="1545131744971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dell/iDRAC-Redfish-Scripting/Redfish Python/good" />
     <SUITE FILE_PATH="coverage/xmlparse$fupd.coverage" NAME="fupd Coverage Results" MODIFIED="1546871365083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../eatonfwupd" />
     <SUITE FILE_PATH="coverage/xmlparse$xmlparse.coverage" NAME="xmlparse Coverage Results" MODIFIED="1549983377390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dell" />
@@ -36,8 +35,8 @@
       <file leaf-file-name="xmlparse.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dell/xmlparse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="582" column="52" lean-forward="true" selection-start-line="582" selection-start-column="52" selection-end-line="582" selection-end-column="52" />
+            <state relative-caret-position="1402">
+              <caret line="130" column="43" lean-forward="false" selection-start-line="130" selection-start-column="43" selection-end-line="130" selection-end-column="43" />
               <folding>
                 <element signature="e#53#81#0" expanded="true" />
               </folding>
@@ -45,21 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigurationInventory.golden" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dell/ConfigurationInventory.golden">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-63">
-              <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="nex2.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dell/offline/nex2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="5303" column="18" lean-forward="false" selection-start-line="5303" selection-start-column="18" selection-end-line="5303" selection-end-column="18" />
+            <state relative-caret-position="100">
+              <caret line="1618" column="33" lean-forward="false" selection-start-line="1618" selection-start-column="23" selection-end-line="1618" selection-end-column="33" />
               <folding>
                 <element signature="n#Component#0;n#Inventory#0;n#!!top" expanded="false" />
                 <element signature="n#Component#1;n#Inventory#0;n#!!top" expanded="false" />
@@ -77,7 +66,6 @@
                 <element signature="n#Component#11;n#Inventory#0;n#!!top" expanded="false" />
                 <element signature="n#Component#12;n#Inventory#0;n#!!top" expanded="false" />
                 <element signature="n#Component#13;n#Inventory#0;n#!!top" expanded="false" />
-                <element signature="n#Component#14;n#Inventory#0;n#!!top" expanded="false" />
                 <element signature="n#Component#15;n#Inventory#0;n#!!top" expanded="false" />
                 <element signature="n#Component#16;n#Inventory#0;n#!!top" expanded="false" />
                 <element signature="n#Component#17;n#Inventory#0;n#!!top" expanded="false" />
@@ -127,26 +115,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="550" column="27" lean-forward="false" selection-start-line="550" selection-start-column="19" selection-end-line="550" selection-end-column="27" />
-              <folding>
-                <marker date="1555908418799" expanded="true" signature="28888:28894" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="43037:44266" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="44314:87068" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="87110:100561" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="100603:103249" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="103289:113140" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="113188:119957" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="120047:122013" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="122048:136815" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="136856:138357" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="138397:139898" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="139938:141242" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="141282:142586" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="142626:145488" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="143877:144876" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="144942:145411" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="145023:145168" ph="..." />
-                <marker date="1555908418799" expanded="true" signature="145249:145394" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -162,10 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>memory</find>
-      <find>pop</find>
-      <find>mem</find>
-      <find>hwfamily</find>
       <find>golden</find>
       <find>summary</find>
       <find>'valid'</find>
@@ -187,11 +152,15 @@
       <find>rewr</find>
       <find>NIC.Integrated.1-2-1</find>
       <find>FQDD</find>
-      <find>LCD.1#</find>
       <find>red</find>
       <find>writesumma</find>
       <find>ip</find>
       <find>DaylightOffset</find>
+      <find>HMA82GR7AFR8N-VK</find>
+      <find>red_cell</find>
+      <find>LCD.1#</find>
+      <find>hw_collect</find>
+      <find>DIMM.Socket.A1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -628,17 +597,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13326226" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2777778" sideWeight="0.5106496" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36302894" sideWeight="0.48935038" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43207127" sideWeight="0.48935038" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.02895323" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32666665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24920128" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12555556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13326226" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24920128" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.026726058" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21714923" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -649,7 +618,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24444444" sideWeight="0.49570355" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.027027028" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,7 +628,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -686,7 +654,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dell/HardwareInventory.golden">
+    <entry file="file://$PROJECT_DIR$/dell/HardwareInventory.golden640">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="5104" column="30" lean-forward="false" selection-start-line="5104" selection-start-column="26" selection-end-line="5104" selection-end-column="30" />
@@ -893,10 +861,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dell/ConfigurationInventory.golden">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dell/offline/golden_640_all.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="550" column="27" lean-forward="false" selection-start-line="550" selection-start-column="19" selection-end-line="550" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dell/offline/nex2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="5303" column="18" lean-forward="false" selection-start-line="5303" selection-start-column="18" selection-end-line="5303" selection-end-column="18" />
+        <state relative-caret-position="100">
+          <caret line="1618" column="33" lean-forward="false" selection-start-line="1618" selection-start-column="23" selection-end-line="1618" selection-end-column="33" />
           <folding>
             <element signature="n#Component#0;n#Inventory#0;n#!!top" expanded="false" />
             <element signature="n#Component#1;n#Inventory#0;n#!!top" expanded="false" />
@@ -914,7 +898,6 @@
             <element signature="n#Component#11;n#Inventory#0;n#!!top" expanded="false" />
             <element signature="n#Component#12;n#Inventory#0;n#!!top" expanded="false" />
             <element signature="n#Component#13;n#Inventory#0;n#!!top" expanded="false" />
-            <element signature="n#Component#14;n#Inventory#0;n#!!top" expanded="false" />
             <element signature="n#Component#15;n#Inventory#0;n#!!top" expanded="false" />
             <element signature="n#Component#16;n#Inventory#0;n#!!top" expanded="false" />
             <element signature="n#Component#17;n#Inventory#0;n#!!top" expanded="false" />
@@ -958,45 +941,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dell/offline/golden_640_all.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="550" column="27" lean-forward="false" selection-start-line="550" selection-start-column="19" selection-end-line="550" selection-end-column="27" />
-          <folding>
-            <marker date="1555908418799" expanded="true" signature="28888:28894" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="43037:44266" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="44314:87068" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="87110:100561" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="100603:103249" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="103289:113140" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="113188:119957" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="120047:122013" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="122048:136815" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="136856:138357" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="138397:139898" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="139938:141242" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="141282:142586" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="142626:145488" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="143877:144876" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="144942:145411" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="145023:145168" ph="..." />
-            <marker date="1555908418799" expanded="true" signature="145249:145394" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dell/ConfigurationInventory.golden">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dell/xmlparse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="582" column="52" lean-forward="true" selection-start-line="582" selection-start-column="52" selection-end-line="582" selection-end-column="52" />
+        <state relative-caret-position="1402">
+          <caret line="130" column="43" lean-forward="false" selection-start-line="130" selection-start-column="43" selection-end-line="130" selection-end-column="43" />
           <folding>
             <element signature="e#53#81#0" expanded="true" />
           </folding>
