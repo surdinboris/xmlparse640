@@ -182,7 +182,7 @@ def main(argv):
     #network scan
     def nmapscan():
         nm = nmap.PortScanner()
-        nm.scan('10.48.228.1-40', '22')
+        nm.scan('10.160.231.172-211', '22')
         """Sort an IP address list."""
         ipl = [(IP(ip).int(), ip) for ip in nm.all_hosts()]
         ipl.sort()
