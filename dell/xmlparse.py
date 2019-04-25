@@ -41,7 +41,8 @@ servers_count=26
 #additional attributes to collect for dynamic configuration data (FQDD, <!-- <Attribute Name=" ....)
 additional_conf_collect = {}
 additional_conf_collect.update({"Disk.Virtual.0:RAID.Integrated.1-1": ['Name', 'Size', 'StripeSize', 'SpanDepth', 'SpanLength', 'RAIDTypes', 'IncludedPhysicalDiskID']})
-#additional_conf_collect.update({"iDRAC.Embedded.1": ["IPv4Static.1#Address"]})
+# additional_conf_collect.update({"iDRAC.Embedded.1": ["IPv4Static.1#Netmask"]})
+# additional_conf_collect.update({"iDRAC.Embedded.1": ["IPv4Static.1#Netmask"]})
 # summary object init
 summary = {}
 errors={}

@@ -406,9 +406,9 @@
  <Attribute Name="IPv6.1#AutoConfig">Enabled</Attribute>
  <!-- <Attribute Name="NICStatic.1#DNSDomainName"></Attribute> -->
  <Attribute Name="NICStatic.1#DNSDomainFromDHCP">Disabled</Attribute>
- <!--<Attribute Name="IPv4Static.1#Address">10.48.228.1</Attribute> -->
+ <!-- <Attribute Name="IPv4Static.1#Address">10.48.228.2</Attribute> -->
  <Attribute Name="IPv4Static.1#Netmask">255.255.224.0</Attribute>
- <!--<Attribute Name="IPv4Static.1#Gateway">10.160.255.254</Attribute> -->
+ <Attribute Name="IPv4Static.1#Gateway">10.160.255.254</Attribute>
  <Attribute Name="IPv4Static.1#DNS1">0.0.0.0</Attribute>
  <Attribute Name="IPv4Static.1#DNS2">0.0.0.0</Attribute>
  <Attribute Name="IPv4Static.1#DNSFromDHCP">Disabled</Attribute>
