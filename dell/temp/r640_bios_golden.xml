@@ -1,5 +1,5 @@
-<SystemConfiguration Model="PowerEdge R640" ServiceTag="9J3K2W2" TimeStamp="Sun Apr 28 09:11:02 2019">
-<!--Export type is Normal,XML-->
+<SystemConfiguration Model="PowerEdge R640" ServiceTag="6G8K2W2" TimeStamp="Thu Apr 11 19:04:06 2019">
+<!--Export type is Clone,XML-->
 <!--Exported configuration may contain commented attributes. Attributes may be commented due to dependency, destructive nature, preserving server identity or for security reasons.-->
 <!--Exported configuration does not contain FC-HBA data as the presence of the appropriate cards could not be detected!-->
 <Component FQDD="iDRAC.Embedded.1">
@@ -9,7 +9,7 @@
  <Attribute Name="IPMILan.1#CommunityName">public</Attribute>
  <Attribute Name="IPMILan.1#AlertEnable">Disabled</Attribute>
  <Attribute Name="Users.2#UserName">root</Attribute>
- <!-- <Attribute Name="Users.2#Password">******</Attribute> -->
+ <Attribute Name="Users.2#Password">calvin</Attribute>
  <Attribute Name="Users.2#Privilege">511</Attribute>
  <Attribute Name="Users.2#IpmiLanPrivilege">Administrator</Attribute>
  <Attribute Name="Users.2#IpmiSerialPrivilege">Administrator</Attribute>
@@ -19,7 +19,7 @@
  <Attribute Name="Users.2#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.2#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.3#UserName"></Attribute>
- <!-- <Attribute Name="Users.3#Password">******</Attribute> -->
+ <Attribute Name="Users.3#Password"></Attribute>
  <Attribute Name="Users.3#Privilege">0</Attribute>
  <Attribute Name="Users.3#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.3#IpmiSerialPrivilege">No Access</Attribute>
@@ -29,7 +29,7 @@
  <Attribute Name="Users.3#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.3#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.4#UserName"></Attribute>
- <!-- <Attribute Name="Users.4#Password">******</Attribute> -->
+ <Attribute Name="Users.4#Password"></Attribute>
  <Attribute Name="Users.4#Privilege">0</Attribute>
  <Attribute Name="Users.4#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.4#IpmiSerialPrivilege">No Access</Attribute>
@@ -39,7 +39,7 @@
  <Attribute Name="Users.4#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.4#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.5#UserName"></Attribute>
- <!-- <Attribute Name="Users.5#Password">******</Attribute> -->
+ <Attribute Name="Users.5#Password"></Attribute>
  <Attribute Name="Users.5#Privilege">0</Attribute>
  <Attribute Name="Users.5#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.5#IpmiSerialPrivilege">No Access</Attribute>
@@ -49,7 +49,7 @@
  <Attribute Name="Users.5#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.5#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.6#UserName"></Attribute>
- <!-- <Attribute Name="Users.6#Password">******</Attribute> -->
+ <Attribute Name="Users.6#Password"></Attribute>
  <Attribute Name="Users.6#Privilege">0</Attribute>
  <Attribute Name="Users.6#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.6#IpmiSerialPrivilege">No Access</Attribute>
@@ -59,7 +59,7 @@
  <Attribute Name="Users.6#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.6#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.7#UserName"></Attribute>
- <!-- <Attribute Name="Users.7#Password">******</Attribute> -->
+ <Attribute Name="Users.7#Password"></Attribute>
  <Attribute Name="Users.7#Privilege">0</Attribute>
  <Attribute Name="Users.7#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.7#IpmiSerialPrivilege">No Access</Attribute>
@@ -69,7 +69,7 @@
  <Attribute Name="Users.7#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.7#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.8#UserName"></Attribute>
- <!-- <Attribute Name="Users.8#Password">******</Attribute> -->
+ <Attribute Name="Users.8#Password"></Attribute>
  <Attribute Name="Users.8#Privilege">0</Attribute>
  <Attribute Name="Users.8#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.8#IpmiSerialPrivilege">No Access</Attribute>
@@ -79,7 +79,7 @@
  <Attribute Name="Users.8#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.8#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.9#UserName"></Attribute>
- <!-- <Attribute Name="Users.9#Password">******</Attribute> -->
+ <Attribute Name="Users.9#Password"></Attribute>
  <Attribute Name="Users.9#Privilege">0</Attribute>
  <Attribute Name="Users.9#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.9#IpmiSerialPrivilege">No Access</Attribute>
@@ -89,7 +89,7 @@
  <Attribute Name="Users.9#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.9#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.10#UserName"></Attribute>
- <!-- <Attribute Name="Users.10#Password">******</Attribute> -->
+ <Attribute Name="Users.10#Password"></Attribute>
  <Attribute Name="Users.10#Privilege">0</Attribute>
  <Attribute Name="Users.10#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.10#IpmiSerialPrivilege">No Access</Attribute>
@@ -99,7 +99,7 @@
  <Attribute Name="Users.10#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.10#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.11#UserName"></Attribute>
- <!-- <Attribute Name="Users.11#Password">******</Attribute> -->
+ <Attribute Name="Users.11#Password"></Attribute>
  <Attribute Name="Users.11#Privilege">0</Attribute>
  <Attribute Name="Users.11#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.11#IpmiSerialPrivilege">No Access</Attribute>
@@ -109,7 +109,7 @@
  <Attribute Name="Users.11#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.11#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.12#UserName"></Attribute>
- <!-- <Attribute Name="Users.12#Password">******</Attribute> -->
+ <Attribute Name="Users.12#Password"></Attribute>
  <Attribute Name="Users.12#Privilege">0</Attribute>
  <Attribute Name="Users.12#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.12#IpmiSerialPrivilege">No Access</Attribute>
@@ -119,7 +119,7 @@
  <Attribute Name="Users.12#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.12#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.13#UserName"></Attribute>
- <!-- <Attribute Name="Users.13#Password">******</Attribute> -->
+ <Attribute Name="Users.13#Password"></Attribute>
  <Attribute Name="Users.13#Privilege">0</Attribute>
  <Attribute Name="Users.13#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.13#IpmiSerialPrivilege">No Access</Attribute>
@@ -129,7 +129,7 @@
  <Attribute Name="Users.13#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.13#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.14#UserName"></Attribute>
- <!-- <Attribute Name="Users.14#Password">******</Attribute> -->
+ <Attribute Name="Users.14#Password"></Attribute>
  <Attribute Name="Users.14#Privilege">0</Attribute>
  <Attribute Name="Users.14#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.14#IpmiSerialPrivilege">No Access</Attribute>
@@ -139,7 +139,7 @@
  <Attribute Name="Users.14#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.14#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.15#UserName"></Attribute>
- <!-- <Attribute Name="Users.15#Password">******</Attribute> -->
+ <Attribute Name="Users.15#Password"></Attribute>
  <Attribute Name="Users.15#Privilege">0</Attribute>
  <Attribute Name="Users.15#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.15#IpmiSerialPrivilege">No Access</Attribute>
@@ -149,7 +149,7 @@
  <Attribute Name="Users.15#AuthenticationProtocol">SHA</Attribute>
  <Attribute Name="Users.15#PrivacyProtocol">AES</Attribute>
  <Attribute Name="Users.16#UserName"></Attribute>
- <!-- <Attribute Name="Users.16#Password">******</Attribute> -->
+ <Attribute Name="Users.16#Password"></Attribute>
  <Attribute Name="Users.16#Privilege">0</Attribute>
  <Attribute Name="Users.16#IpmiLanPrivilege">No Access</Attribute>
  <Attribute Name="Users.16#IpmiSerialPrivilege">No Access</Attribute>
@@ -188,8 +188,8 @@
  <Attribute Name="WebServer.1#SSLEncryptionBitLength">128-Bit or higher</Attribute>
  <Attribute Name="WebServer.1#TLSProtocol">TLS 1.1 and Higher</Attribute>
  <Attribute Name="WebServer.1#TitleBarOption">Auto</Attribute>
- <Attribute Name="WebServer.1#CustomCipherString"></Attribute>
  <Attribute Name="WebServer.1#TitleBarOptionCustom"></Attribute>
+ <Attribute Name="WebServer.1#CustomCipherString"></Attribute>
  <Attribute Name="VirtualConsole.1#Enable">Enabled</Attribute>
  <Attribute Name="VirtualConsole.1#EncryptEnable">Enabled</Attribute>
  <Attribute Name="VirtualConsole.1#LocalVideo">Enabled</Attribute>
@@ -350,7 +350,7 @@
  <Attribute Name="LDAP.1#GroupAttribute"></Attribute>
  <Attribute Name="LDAP.1#GroupAttributeIsDN">Enabled</Attribute>
  <Attribute Name="LDAP.1#BindDN"></Attribute>
- <!-- <Attribute Name="LDAP.1#BindPassword">******</Attribute> -->
+ <Attribute Name="LDAP.1#BindPassword"></Attribute>
  <Attribute Name="LDAP.1#SearchFilter"></Attribute>
  <Attribute Name="LDAP.1#CertValidationEnable">Enabled</Attribute>
  <Attribute Name="LDAPRoleGroup.1#DN"></Attribute>
@@ -367,11 +367,11 @@
  <Attribute Name="RemoteHosts.1#SMTPPort">25</Attribute>
  <Attribute Name="RemoteHosts.1#SMTPAuthentication">Disabled</Attribute>
  <Attribute Name="RemoteHosts.1#SMTPUserName"></Attribute>
- <!-- <Attribute Name="RemoteHosts.1#SMTPPassword">******</Attribute> -->
+ <Attribute Name="RemoteHosts.1#SMTPPassword"></Attribute>
  <Attribute Name="RemoteHosts.1#SenderEmail"></Attribute>
  <Attribute Name="RFS.1#AttachMode">Auto Attach</Attribute>
  <Attribute Name="RFS.1#Image"></Attribute>
- <!-- <Attribute Name="RFS.1#Password">******</Attribute> -->
+ <Attribute Name="RFS.1#Password"></Attribute>
  <Attribute Name="RFS.1#User"></Attribute>
  <Attribute Name="RFS.1#Enable">Disabled</Attribute>
  <Attribute Name="RFS.1#Status">Done</Attribute>
@@ -387,7 +387,7 @@
  <Attribute Name="NIC.1#Speed">1000</Attribute>
  <Attribute Name="NIC.1#Duplex">Full</Attribute>
  <Attribute Name="NIC.1#MTU">1500</Attribute>
- <!-- <Attribute Name="NIC.1#DNSRacName">L39</Attribute> -->
+ <!-- <Attribute Name="NIC.1#DNSRacName">R33-L1</Attribute> -->
  <Attribute Name="NIC.1#DNSRegister">Disabled</Attribute>
  <Attribute Name="NIC.1#VLanEnable">Disabled</Attribute>
  <Attribute Name="NIC.1#VLanPriority">0</Attribute>
@@ -406,13 +406,13 @@
  <Attribute Name="IPv6.1#AutoConfig">Enabled</Attribute>
  <!-- <Attribute Name="NICStatic.1#DNSDomainName"></Attribute> -->
  <Attribute Name="NICStatic.1#DNSDomainFromDHCP">Disabled</Attribute>
- <!-- <Attribute Name="IPv4Static.1#Address">10.160.231.173</Attribute> -->
+ <Attribute Name="IPv4Static.1#Address">10.48.228.1</Attribute>
  <Attribute Name="IPv4Static.1#Netmask">255.255.224.0</Attribute>
- <Attribute Name="IPv4Static.1#Gateway">10.160.255.254</Attribute>
+ <Attribute Name="IPv4Static.1#Gateway">10.48.228.254</Attribute>
  <Attribute Name="IPv4Static.1#DNS1">0.0.0.0</Attribute>
  <Attribute Name="IPv4Static.1#DNS2">0.0.0.0</Attribute>
  <Attribute Name="IPv4Static.1#DNSFromDHCP">Disabled</Attribute>
- <!-- <Attribute Name="IPv6Static.1#Address1">::</Attribute> -->
+ <Attribute Name="IPv6Static.1#Address1">::</Attribute>
  <Attribute Name="IPv6Static.1#Gateway">::</Attribute>
  <Attribute Name="IPv6Static.1#PrefixLength">64</Attribute>
  <Attribute Name="IPv6Static.1#DNS1">::</Attribute>
@@ -468,7 +468,7 @@
  <Attribute Name="ServiceModule.1#HostSNMPAlert">Disabled</Attribute>
  <Attribute Name="ServiceModule.1#iDRACSSOLauncher">Enabled</Attribute>
  <Attribute Name="VNCServer.1#Enable">Disabled</Attribute>
- <!-- <Attribute Name="VNCServer.1#Password">******</Attribute> -->
+ <Attribute Name="VNCServer.1#Password"></Attribute>
  <Attribute Name="VNCServer.1#Port">5901</Attribute>
  <Attribute Name="VNCServer.1#LowerEncryptionBitLength">Disabled</Attribute>
  <Attribute Name="VNCServer.1#Timeout">300</Attribute>
@@ -486,7 +486,7 @@
  <Attribute Name="ServerBoot.1#BootOnce">Enabled</Attribute>
  <Attribute Name="USB.1#ConfigurationXML">Enabled while server has default credential settings only</Attribute>
  <Attribute Name="USB.1#PortStatus">Enabled</Attribute>
- <!-- <Attribute Name="USB.1#ZipPassword">******</Attribute> -->
+ <Attribute Name="USB.1#ZipPassword"></Attribute>
  <Attribute Name="GroupManager.1#Status">Enabled</Attribute>
  <Attribute Name="SupportAssist.1#SupportAssistEnableState">Disabled</Attribute>
  <Attribute Name="SupportAssist.1#EventBasedAutoCollection">Disabled</Attribute>
@@ -497,7 +497,7 @@
  <Attribute Name="SupportAssist.1#DefaultShareName"></Attribute>
  <Attribute Name="SupportAssist.1#DefaultWorkgroupName"></Attribute>
  <Attribute Name="SupportAssist.1#DefaultUserName"></Attribute>
- <!-- <Attribute Name="SupportAssist.1#DefaultPassword">******</Attribute> -->
+ <Attribute Name="SupportAssist.1#DefaultPassword"></Attribute>
  <Attribute Name="SupportAssist.1#EmailOptIn">Yes</Attribute>
  <Attribute Name="SupportAssist.1#PreferredLanguage">English</Attribute>
  <Attribute Name="SupportAssist.1#DefaultProtocolPort">0</Attribute>
@@ -695,7 +695,7 @@
  <!-- <Attribute Name="ServerTopology.1#RackName"></Attribute> -->
  <!-- <Attribute Name="ServerTopology.1#RackSlot">1</Attribute> -->
  <!-- <Attribute Name="ServerTopology.1#RoomName"></Attribute> -->
- <!-- <Attribute Name="ServerOS.1#HostName">L39</Attribute> -->
+ <!-- <Attribute Name="ServerOS.1#HostName">R33-L1</Attribute> -->
  <!-- <Attribute Name="ServerOS.1#OSName"></Attribute> -->
  <Attribute Name="PCIeSlotLFM.1#CustomLFM">0</Attribute>
  <Attribute Name="PCIeSlotLFM.1#LFMMode">Automatic</Attribute>
@@ -725,7 +725,7 @@
  <Attribute Name="LCAttributes.1#UserProxyServer"></Attribute>
  <Attribute Name="LCAttributes.1#UserProxyPort">80</Attribute>
  <Attribute Name="LCAttributes.1#UserProxyUserName"></Attribute>
- <!-- <Attribute Name="LCAttributes.1#UserProxyPassword">******</Attribute> -->
+ <Attribute Name="LCAttributes.1#UserProxyPassword"></Attribute>
  <Attribute Name="LCAttributes.1#UserProxyType">HTTP</Attribute>
  <Attribute Name="LCAttributes.1#IgnoreCertWarning">On</Attribute>
 </Component>
@@ -2162,59 +2162,13 @@
     <Attribute Name="ErrPrompt">Enabled</Attribute>
     <Attribute Name="ForceInt10">Disabled</Attribute>
     <Attribute Name="DellWyseP25BIOSAccess">Enabled</Attribute>
-    <!-- <Attribute Name="UefiBootSeq">NIC.PxeDevice.1-1, NIC.PxeDevice.2-1</Attribute> -->
+    <Attribute Name="UefiBootSeq">NIC.PxeDevice.1-1, RAID.Integrated.1-1, NIC.PxeDevice.2-1</Attribute>
     <!-- <Attribute Name="HddSeq"></Attribute> -->
     <!-- <Attribute Name="OneTimeBiosBootSeq"></Attribute> -->
     <!-- <Attribute Name="OneTimeUefiBootSeq"></Attribute> -->
     <!-- <Attribute Name="OneTimeHddSeq"></Attribute> -->
 </Component>
 
-<Component FQDD="NIC.Integrated.1-4-1">
-    <Attribute Name="BlnkLeds">0</Attribute>
-    <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
-    <Attribute Name="LegacyBootProto">NONE</Attribute>
-    <Attribute Name="LnkSpeed">AutoNeg</Attribute>
-    <Attribute Name="WakeOnLan">Disabled</Attribute>
-    <!-- <Attribute Name="VLanId">0</Attribute> -->
-    <Attribute Name="TcpIpViaDHCP">Enabled</Attribute>
-    <Attribute Name="IscsiViaDHCP">Enabled</Attribute>
-    <Attribute Name="ChapAuthEnable">Disabled</Attribute>
-    <!-- <Attribute Name="ChapMutualAuth">Disabled</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorIpAddr">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorSubnet">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorGateway">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorName"></Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorChapId"></Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorChapPwd"></Attribute> -->
-    <!-- <Attribute Name="FirstTgtIpAddress">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="FirstTgtTcpPort">3260</Attribute> -->
-    <!-- <Attribute Name="FirstTgtBootLun">0</Attribute> -->
-    <!-- <Attribute Name="FirstTgtIscsiName"></Attribute> -->
-    <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
-</Component>
-<Component FQDD="NIC.Integrated.1-3-1">
-    <Attribute Name="BlnkLeds">0</Attribute>
-    <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
-    <Attribute Name="LegacyBootProto">NONE</Attribute>
-    <Attribute Name="LnkSpeed">AutoNeg</Attribute>
-    <Attribute Name="WakeOnLan">Disabled</Attribute>
-    <!-- <Attribute Name="VLanId">0</Attribute> -->
-    <Attribute Name="TcpIpViaDHCP">Enabled</Attribute>
-    <Attribute Name="IscsiViaDHCP">Enabled</Attribute>
-    <Attribute Name="ChapAuthEnable">Disabled</Attribute>
-    <!-- <Attribute Name="ChapMutualAuth">Disabled</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorIpAddr">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorSubnet">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorGateway">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorName"></Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorChapId"></Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorChapPwd"></Attribute> -->
-    <!-- <Attribute Name="FirstTgtIpAddress">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="FirstTgtTcpPort">3260</Attribute> -->
-    <!-- <Attribute Name="FirstTgtBootLun">0</Attribute> -->
-    <!-- <Attribute Name="FirstTgtIscsiName"></Attribute> -->
-    <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
-</Component>
 <Component FQDD="NIC.Integrated.1-1-1">
     <Attribute Name="BlnkLeds">0</Attribute>
     <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
@@ -2267,11 +2221,57 @@
     <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
     <!-- <Attribute Name="VFDistribution">64:0:0:0:0:0:0:0</Attribute> -->
 </Component>
+<Component FQDD="NIC.Integrated.1-4-1">
+    <Attribute Name="BlnkLeds">0</Attribute>
+    <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
+    <Attribute Name="LegacyBootProto">NONE</Attribute>
+    <Attribute Name="LnkSpeed">AutoNeg</Attribute>
+    <Attribute Name="WakeOnLan">Disabled</Attribute>
+    <!-- <Attribute Name="VLanId">0</Attribute> -->
+    <Attribute Name="TcpIpViaDHCP">Enabled</Attribute>
+    <Attribute Name="IscsiViaDHCP">Enabled</Attribute>
+    <Attribute Name="ChapAuthEnable">Disabled</Attribute>
+    <!-- <Attribute Name="ChapMutualAuth">Disabled</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorIpAddr">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorSubnet">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorGateway">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorName"></Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorChapId"></Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorChapPwd"></Attribute> -->
+    <!-- <Attribute Name="FirstTgtIpAddress">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="FirstTgtTcpPort">3260</Attribute> -->
+    <!-- <Attribute Name="FirstTgtBootLun">0</Attribute> -->
+    <!-- <Attribute Name="FirstTgtIscsiName"></Attribute> -->
+    <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
+</Component>
+<Component FQDD="NIC.Integrated.1-3-1">
+    <Attribute Name="BlnkLeds">0</Attribute>
+    <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
+    <Attribute Name="LegacyBootProto">NONE</Attribute>
+    <Attribute Name="LnkSpeed">AutoNeg</Attribute>
+    <Attribute Name="WakeOnLan">Disabled</Attribute>
+    <!-- <Attribute Name="VLanId">0</Attribute> -->
+    <Attribute Name="TcpIpViaDHCP">Enabled</Attribute>
+    <Attribute Name="IscsiViaDHCP">Enabled</Attribute>
+    <Attribute Name="ChapAuthEnable">Disabled</Attribute>
+    <!-- <Attribute Name="ChapMutualAuth">Disabled</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorIpAddr">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorSubnet">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorGateway">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorName"></Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorChapId"></Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorChapPwd"></Attribute> -->
+    <!-- <Attribute Name="FirstTgtIpAddress">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="FirstTgtTcpPort">3260</Attribute> -->
+    <!-- <Attribute Name="FirstTgtBootLun">0</Attribute> -->
+    <!-- <Attribute Name="FirstTgtIscsiName"></Attribute> -->
+    <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
+</Component>
 
 <Component FQDD="RAID.Integrated.1-1">
-    <Attribute Name="RAIDresetConfig">False</Attribute>
-    <Attribute Name="RAIDforeignConfig">Ignore</Attribute>
-    <!-- <Attribute Name="CurrentControllerMode">RAID</Attribute> -->
+    <Attribute Name="RAIDresetConfig">True</Attribute>
+    <Attribute Name="RAIDforeignConfig">Clear</Attribute>
+    <Attribute Name="CurrentControllerMode">RAID</Attribute>
     <Attribute Name="RAIDrekey">False</Attribute>
     <Attribute Name="EncryptionMode">None</Attribute>
     <!-- <Attribute Name="KeyID"></Attribute> -->
@@ -2290,30 +2290,30 @@
     <Attribute Name="RAIDccRate">30</Attribute>
     <Attribute Name="RAIDreconstructRate">30</Attribute>
     <Component FQDD="Disk.Virtual.0:RAID.Integrated.1-1">
-        <Attribute Name="RAIDaction">Update</Attribute>
+        <Attribute Name="RAIDaction">Create</Attribute>
         <Attribute Name="LockStatus">Unlocked</Attribute>
         <Attribute Name="BootVD">True</Attribute>
         <Attribute Name="RAIDinitOperation">None</Attribute>
         <Attribute Name="DiskCachePolicy">Default</Attribute>
         <Attribute Name="RAIDdefaultWritePolicy">WriteBack</Attribute>
         <Attribute Name="RAIDdefaultReadPolicy">ReadAhead</Attribute>
-        <!-- <Attribute Name="Name">Virtual Disk 0</Attribute> -->
-        <!-- <Attribute Name="Size">1919716163584</Attribute> -->
-        <!-- <Attribute Name="StripeSize">128</Attribute> -->
-        <!-- <Attribute Name="SpanDepth">1</Attribute> -->
-        <!-- <Attribute Name="SpanLength">2</Attribute> -->
-        <!-- <Attribute Name="RAIDTypes">RAID 1</Attribute> -->
-        <!-- <Attribute Name="IncludedPhysicalDiskID">Disk.Bay.0:Enclosure.Internal.0-1:RAID.Integrated.1-1</Attribute> -->
-        <!-- <Attribute Name="IncludedPhysicalDiskID">Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1</Attribute> -->
+        <Attribute Name="Name">Virtual Disk 0</Attribute>
+        <Attribute Name="Size">1919716163584</Attribute>
+        <Attribute Name="StripeSize">128</Attribute>
+        <Attribute Name="SpanDepth">1</Attribute>
+        <Attribute Name="SpanLength">2</Attribute>
+        <Attribute Name="RAIDTypes">RAID 1</Attribute>
+        <Attribute Name="IncludedPhysicalDiskID">Disk.Bay.0:Enclosure.Internal.0-1:RAID.Integrated.1-1</Attribute>
+        <Attribute Name="IncludedPhysicalDiskID">Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1</Attribute>
     </Component>
     <Component FQDD="Enclosure.Internal.0-1:RAID.Integrated.1-1">
         <Component FQDD="Disk.Bay.0:Enclosure.Internal.0-1:RAID.Integrated.1-1">
-            <!-- <Attribute Name="RAIDHotSpareStatus">No</Attribute> -->
-            <!-- <Attribute Name="RAIDPDState">Online</Attribute> -->
+            <Attribute Name="RAIDHotSpareStatus">No</Attribute>
+            <Attribute Name="RAIDPDState">Ready</Attribute>
         </Component>
         <Component FQDD="Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1">
-            <!-- <Attribute Name="RAIDHotSpareStatus">No</Attribute> -->
-            <!-- <Attribute Name="RAIDPDState">Online</Attribute> -->
+            <Attribute Name="RAIDHotSpareStatus">No</Attribute>
+            <Attribute Name="RAIDPDState">Ready</Attribute>
         </Component>
     </Component>
     <Attribute Name="RAIDremoveControllerKey">False</Attribute>

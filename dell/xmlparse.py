@@ -40,7 +40,7 @@ pdus=['10.48.228.51', '10.48.228.52', '10.48.228.53', '10.48.228.54']
 servers_count=26
 #additional attributes to collect for dynamic configuration data (FQDD, <!-- <Attribute Name=" ....)
 additional_conf_collect = {}
-additional_conf_collect.update({"Disk.Virtual.0:RAID.Integrated.1-1": ['Name', 'Size', 'StripeSize', 'SpanDepth', 'SpanLength', 'RAIDTypes', 'IncludedPhysicalDiskID']})
+additional_conf_collect.update({"Disk.Virtual.0:RAID.Integrated.1-1": ['Name', 'Size', 'StripeSize', 'SpanDepth', 'SpanLength', 'RAIDTypes', 'IncludedPhysicalDiskID'], "BIOS.Setup.1-1":['UefiBootSeq']})
 # additional_conf_collect.update({"iDRAC.Embedded.1": ["IPv4Static.1#Netmask"]})
 # additional_conf_collect.update({"iDRAC.Embedded.1": ["IPv4Static.1#Netmask"]})
 # summary object init
@@ -594,7 +594,13 @@ def report_analyze(currep):
             if curr_val == 'n/a':
                 data_per.append({curr_val: 4, 'golden': master_item})
             else:
-                data_per.append({curr_val: int(master_item == curr_val), 'golden': master_item})
+                # memory PN fix
+                if curr_val == "M393A2K43CB2-CTD" and curr_val != master_item:
+                    data_per.append({curr_val: 1, 'golden': master_item})
+                else:
+                    data_per.append({curr_val: int(master_item == curr_val), 'golden': master_item})
+
+
             # print(int(master_item == curr_val),' ',  master_item, ' ', curr_val)
         #checking for extra  subitems
         for i, curr_item in enumerate(currep[record]['data']):

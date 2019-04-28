@@ -1,7 +1,184 @@
-<SystemConfiguration Model="PowerEdge R640" ServiceTag="9J3K2W2" TimeStamp="Sun Apr 28 09:11:02 2019">
+<SystemConfiguration Model="PowerEdge R640" ServiceTag="2K3K2W2" TimeStamp="Sun Apr 28 10:58:12 2019">
 <!--Export type is Normal,XML-->
 <!--Exported configuration may contain commented attributes. Attributes may be commented due to dependency, destructive nature, preserving server identity or for security reasons.-->
 <!--Exported configuration does not contain FC-HBA data as the presence of the appropriate cards could not be detected!-->
+<Component FQDD="SupportAssist.Embedded.1">
+  <!-- <Attribute Name="SupportAssist.1#SupportAssistEULAAccepted"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#SupportAssistEULAAcceptedByiDRACUser"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#PrimaryContactFirstName"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#PrimaryContactLastName"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#PrimaryContactPhoneNumber"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#PrimaryContactAlternatePhoneNumber"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#PrimaryContactEmail"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#SecondaryContactFirstName"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#SecondaryContactLastName"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#SecondaryContactPhoneNumber"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#SecondaryContactAlternatePhoneNumber"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#SecondaryContactEmail"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#ShippingInfoCompanyName"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#ShippingInfoStreet1"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#ShippingInfoStreet2"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#ShippingInfoCity"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#ShippingInfoState"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#ShippingInfoCountry"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#ShippingInfoZip"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#HostOSProxyConfigured"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#HostOSProxyAddress"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#HostOSProxyPort"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#HostOSProxyUserName"></Attribute> -->
+  <!-- <Attribute Name="SupportAssist.1#HostOSProxyPassword"></Attribute> -->
+</Component>
+
+<Component FQDD="NIC.Integrated.1-3-1">
+    <Attribute Name="BlnkLeds">0</Attribute>
+    <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
+    <Attribute Name="LegacyBootProto">NONE</Attribute>
+    <Attribute Name="LnkSpeed">AutoNeg</Attribute>
+    <Attribute Name="WakeOnLan">Disabled</Attribute>
+    <!-- <Attribute Name="VLanId">0</Attribute> -->
+    <Attribute Name="TcpIpViaDHCP">Enabled</Attribute>
+    <Attribute Name="IscsiViaDHCP">Enabled</Attribute>
+    <Attribute Name="ChapAuthEnable">Disabled</Attribute>
+    <!-- <Attribute Name="ChapMutualAuth">Disabled</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorIpAddr">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorSubnet">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorGateway">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorName"></Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorChapId"></Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorChapPwd"></Attribute> -->
+    <!-- <Attribute Name="FirstTgtIpAddress">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="FirstTgtTcpPort">3260</Attribute> -->
+    <!-- <Attribute Name="FirstTgtBootLun">0</Attribute> -->
+    <!-- <Attribute Name="FirstTgtIscsiName"></Attribute> -->
+    <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
+</Component>
+<Component FQDD="NIC.Integrated.1-4-1">
+    <Attribute Name="BlnkLeds">0</Attribute>
+    <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
+    <Attribute Name="LegacyBootProto">NONE</Attribute>
+    <Attribute Name="LnkSpeed">AutoNeg</Attribute>
+    <Attribute Name="WakeOnLan">Disabled</Attribute>
+    <!-- <Attribute Name="VLanId">0</Attribute> -->
+    <Attribute Name="TcpIpViaDHCP">Enabled</Attribute>
+    <Attribute Name="IscsiViaDHCP">Enabled</Attribute>
+    <Attribute Name="ChapAuthEnable">Disabled</Attribute>
+    <!-- <Attribute Name="ChapMutualAuth">Disabled</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorIpAddr">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorSubnet">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorGateway">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorName"></Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorChapId"></Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorChapPwd"></Attribute> -->
+    <!-- <Attribute Name="FirstTgtIpAddress">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="FirstTgtTcpPort">3260</Attribute> -->
+    <!-- <Attribute Name="FirstTgtBootLun">0</Attribute> -->
+    <!-- <Attribute Name="FirstTgtIscsiName"></Attribute> -->
+    <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
+</Component>
+<Component FQDD="NIC.Integrated.1-1-1">
+    <Attribute Name="BlnkLeds">0</Attribute>
+    <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
+    <Attribute Name="VirtualizationMode">SRIOV</Attribute>
+    <!-- <Attribute Name="NParEP">Disabled</Attribute> -->
+    <Attribute Name="LegacyBootProto">PXE</Attribute>
+    <Attribute Name="WakeOnLan">Disabled</Attribute>
+    <!-- <Attribute Name="VLanId">0</Attribute> -->
+    <Attribute Name="NumberVFAdvertised">64</Attribute>
+    <Attribute Name="TcpIpViaDHCP">Enabled</Attribute>
+    <Attribute Name="IscsiViaDHCP">Enabled</Attribute>
+    <Attribute Name="ChapAuthEnable">Disabled</Attribute>
+    <!-- <Attribute Name="ChapMutualAuth">Disabled</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorIpAddr">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorSubnet">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorGateway">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorName"></Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorChapId"></Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorChapPwd"></Attribute> -->
+    <!-- <Attribute Name="FirstTgtIpAddress">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="FirstTgtTcpPort">3260</Attribute> -->
+    <!-- <Attribute Name="FirstTgtBootLun">0</Attribute> -->
+    <!-- <Attribute Name="FirstTgtIscsiName"></Attribute> -->
+    <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
+    <!-- <Attribute Name="VFDistribution">64:0:0:0:0:0:0:0</Attribute> -->
+</Component>
+<Component FQDD="NIC.Integrated.1-2-1">
+    <Attribute Name="BlnkLeds">0</Attribute>
+    <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
+    <Attribute Name="VirtualizationMode">SRIOV</Attribute>
+    <!-- <Attribute Name="NParEP">Disabled</Attribute> -->
+    <Attribute Name="LegacyBootProto">PXE</Attribute>
+    <Attribute Name="WakeOnLan">Disabled</Attribute>
+    <!-- <Attribute Name="VLanId">0</Attribute> -->
+    <Attribute Name="NumberVFAdvertised">64</Attribute>
+    <Attribute Name="TcpIpViaDHCP">Enabled</Attribute>
+    <Attribute Name="IscsiViaDHCP">Enabled</Attribute>
+    <Attribute Name="ChapAuthEnable">Disabled</Attribute>
+    <!-- <Attribute Name="ChapMutualAuth">Disabled</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorIpAddr">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorSubnet">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorGateway">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorName"></Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorChapId"></Attribute> -->
+    <!-- <Attribute Name="IscsiInitiatorChapPwd"></Attribute> -->
+    <!-- <Attribute Name="FirstTgtIpAddress">0.0.0.0</Attribute> -->
+    <!-- <Attribute Name="FirstTgtTcpPort">3260</Attribute> -->
+    <!-- <Attribute Name="FirstTgtBootLun">0</Attribute> -->
+    <!-- <Attribute Name="FirstTgtIscsiName"></Attribute> -->
+    <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
+    <!-- <Attribute Name="VFDistribution">64:0:0:0:0:0:0:0</Attribute> -->
+</Component>
+
+<Component FQDD="RAID.Integrated.1-1">
+    <Attribute Name="RAIDresetConfig">False</Attribute>
+    <Attribute Name="RAIDforeignConfig">Ignore</Attribute>
+    <!-- <Attribute Name="CurrentControllerMode">RAID</Attribute> -->
+    <Attribute Name="RAIDrekey">False</Attribute>
+    <Attribute Name="EncryptionMode">None</Attribute>
+    <!-- <Attribute Name="KeyID"></Attribute> -->
+    <!-- <Attribute Name="OldControllerKey">******</Attribute> -->
+    <!-- <Attribute Name="NewControllerKey">******</Attribute> -->
+    <Attribute Name="RAIDprMode">Automatic</Attribute>
+    <Attribute Name="RAIDPatrolReadUnconfiguredArea">Enabled</Attribute>
+    <Attribute Name="RAIDloadBalancedMode">Automatic</Attribute>
+    <Attribute Name="RAIDccMode">Normal</Attribute>
+    <Attribute Name="RAIDcopybackMode">On</Attribute>
+    <Attribute Name="RAIDpersistentHotspare">Disabled</Attribute>
+    <Attribute Name="RAIDControllerBootMode">Continue Boot On Error</Attribute>
+    <Attribute Name="RAIDEnhancedAutoImportForeignConfig">Disabled</Attribute>
+    <Attribute Name="RAIDrebuildRate">30</Attribute>
+    <Attribute Name="RAIDbgiRate">30</Attribute>
+    <Attribute Name="RAIDccRate">30</Attribute>
+    <Attribute Name="RAIDreconstructRate">30</Attribute>
+    <Component FQDD="Disk.Virtual.0:RAID.Integrated.1-1">
+        <Attribute Name="RAIDaction">Update</Attribute>
+        <Attribute Name="LockStatus">Unlocked</Attribute>
+        <Attribute Name="BootVD">True</Attribute>
+        <Attribute Name="RAIDinitOperation">None</Attribute>
+        <Attribute Name="DiskCachePolicy">Default</Attribute>
+        <Attribute Name="RAIDdefaultWritePolicy">WriteBack</Attribute>
+        <Attribute Name="RAIDdefaultReadPolicy">ReadAhead</Attribute>
+        <!-- <Attribute Name="Name">Virtual Disk 0</Attribute> -->
+        <!-- <Attribute Name="Size">1919716163584</Attribute> -->
+        <!-- <Attribute Name="StripeSize">128</Attribute> -->
+        <!-- <Attribute Name="SpanDepth">1</Attribute> -->
+        <!-- <Attribute Name="SpanLength">2</Attribute> -->
+        <!-- <Attribute Name="RAIDTypes">RAID 1</Attribute> -->
+        <!-- <Attribute Name="IncludedPhysicalDiskID">Disk.Bay.0:Enclosure.Internal.0-1:RAID.Integrated.1-1</Attribute> -->
+        <!-- <Attribute Name="IncludedPhysicalDiskID">Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1</Attribute> -->
+    </Component>
+    <Component FQDD="Enclosure.Internal.0-1:RAID.Integrated.1-1">
+        <Component FQDD="Disk.Bay.0:Enclosure.Internal.0-1:RAID.Integrated.1-1">
+            <!-- <Attribute Name="RAIDHotSpareStatus">No</Attribute> -->
+            <!-- <Attribute Name="RAIDPDState">Online</Attribute> -->
+        </Component>
+        <Component FQDD="Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1">
+            <!-- <Attribute Name="RAIDHotSpareStatus">No</Attribute> -->
+            <!-- <Attribute Name="RAIDPDState">Online</Attribute> -->
+        </Component>
+    </Component>
+    <Attribute Name="RAIDremoveControllerKey">False</Attribute>
+</Component>
+
 <Component FQDD="iDRAC.Embedded.1">
  <Attribute Name="IPMILan.1#Enable">Disabled</Attribute>
  <Attribute Name="IPMILan.1#PrivLimit">Administrator</Attribute>
@@ -387,7 +564,7 @@
  <Attribute Name="NIC.1#Speed">1000</Attribute>
  <Attribute Name="NIC.1#Duplex">Full</Attribute>
  <Attribute Name="NIC.1#MTU">1500</Attribute>
- <!-- <Attribute Name="NIC.1#DNSRacName">L39</Attribute> -->
+ <!-- <Attribute Name="NIC.1#DNSRacName">L35</Attribute> -->
  <Attribute Name="NIC.1#DNSRegister">Disabled</Attribute>
  <Attribute Name="NIC.1#VLanEnable">Disabled</Attribute>
  <Attribute Name="NIC.1#VLanPriority">0</Attribute>
@@ -406,7 +583,7 @@
  <Attribute Name="IPv6.1#AutoConfig">Enabled</Attribute>
  <!-- <Attribute Name="NICStatic.1#DNSDomainName"></Attribute> -->
  <Attribute Name="NICStatic.1#DNSDomainFromDHCP">Disabled</Attribute>
- <!-- <Attribute Name="IPv4Static.1#Address">10.160.231.173</Attribute> -->
+ <!-- <Attribute Name="IPv4Static.1#Address">10.160.231.177</Attribute> -->
  <Attribute Name="IPv4Static.1#Netmask">255.255.224.0</Attribute>
  <Attribute Name="IPv4Static.1#Gateway">10.160.255.254</Attribute>
  <Attribute Name="IPv4Static.1#DNS1">0.0.0.0</Attribute>
@@ -695,7 +872,7 @@
  <!-- <Attribute Name="ServerTopology.1#RackName"></Attribute> -->
  <!-- <Attribute Name="ServerTopology.1#RackSlot">1</Attribute> -->
  <!-- <Attribute Name="ServerTopology.1#RoomName"></Attribute> -->
- <!-- <Attribute Name="ServerOS.1#HostName">L39</Attribute> -->
+ <!-- <Attribute Name="ServerOS.1#HostName">L35</Attribute> -->
  <!-- <Attribute Name="ServerOS.1#OSName"></Attribute> -->
  <Attribute Name="PCIeSlotLFM.1#CustomLFM">0</Attribute>
  <Attribute Name="PCIeSlotLFM.1#LFMMode">Automatic</Attribute>
@@ -1892,33 +2069,6 @@
 </Component>
 <Component FQDD="EventFilters.WorkNotes.1"/>
 
-<Component FQDD="SupportAssist.Embedded.1">
-  <!-- <Attribute Name="SupportAssist.1#SupportAssistEULAAccepted"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#SupportAssistEULAAcceptedByiDRACUser"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#PrimaryContactFirstName"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#PrimaryContactLastName"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#PrimaryContactPhoneNumber"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#PrimaryContactAlternatePhoneNumber"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#PrimaryContactEmail"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#SecondaryContactFirstName"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#SecondaryContactLastName"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#SecondaryContactPhoneNumber"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#SecondaryContactAlternatePhoneNumber"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#SecondaryContactEmail"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#ShippingInfoCompanyName"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#ShippingInfoStreet1"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#ShippingInfoStreet2"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#ShippingInfoCity"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#ShippingInfoState"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#ShippingInfoCountry"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#ShippingInfoZip"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#HostOSProxyConfigured"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#HostOSProxyAddress"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#HostOSProxyPort"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#HostOSProxyUserName"></Attribute> -->
-  <!-- <Attribute Name="SupportAssist.1#HostOSProxyPassword"></Attribute> -->
-</Component>
-
 <Component FQDD="BIOS.Setup.1-1">
     <Attribute Name="WorkloadProfile">NotAvailable</Attribute>
     <Attribute Name="MemTest">Disabled</Attribute>
@@ -2167,156 +2317,6 @@
     <!-- <Attribute Name="OneTimeBiosBootSeq"></Attribute> -->
     <!-- <Attribute Name="OneTimeUefiBootSeq"></Attribute> -->
     <!-- <Attribute Name="OneTimeHddSeq"></Attribute> -->
-</Component>
-
-<Component FQDD="NIC.Integrated.1-4-1">
-    <Attribute Name="BlnkLeds">0</Attribute>
-    <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
-    <Attribute Name="LegacyBootProto">NONE</Attribute>
-    <Attribute Name="LnkSpeed">AutoNeg</Attribute>
-    <Attribute Name="WakeOnLan">Disabled</Attribute>
-    <!-- <Attribute Name="VLanId">0</Attribute> -->
-    <Attribute Name="TcpIpViaDHCP">Enabled</Attribute>
-    <Attribute Name="IscsiViaDHCP">Enabled</Attribute>
-    <Attribute Name="ChapAuthEnable">Disabled</Attribute>
-    <!-- <Attribute Name="ChapMutualAuth">Disabled</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorIpAddr">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorSubnet">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorGateway">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorName"></Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorChapId"></Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorChapPwd"></Attribute> -->
-    <!-- <Attribute Name="FirstTgtIpAddress">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="FirstTgtTcpPort">3260</Attribute> -->
-    <!-- <Attribute Name="FirstTgtBootLun">0</Attribute> -->
-    <!-- <Attribute Name="FirstTgtIscsiName"></Attribute> -->
-    <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
-</Component>
-<Component FQDD="NIC.Integrated.1-3-1">
-    <Attribute Name="BlnkLeds">0</Attribute>
-    <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
-    <Attribute Name="LegacyBootProto">NONE</Attribute>
-    <Attribute Name="LnkSpeed">AutoNeg</Attribute>
-    <Attribute Name="WakeOnLan">Disabled</Attribute>
-    <!-- <Attribute Name="VLanId">0</Attribute> -->
-    <Attribute Name="TcpIpViaDHCP">Enabled</Attribute>
-    <Attribute Name="IscsiViaDHCP">Enabled</Attribute>
-    <Attribute Name="ChapAuthEnable">Disabled</Attribute>
-    <!-- <Attribute Name="ChapMutualAuth">Disabled</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorIpAddr">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorSubnet">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorGateway">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorName"></Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorChapId"></Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorChapPwd"></Attribute> -->
-    <!-- <Attribute Name="FirstTgtIpAddress">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="FirstTgtTcpPort">3260</Attribute> -->
-    <!-- <Attribute Name="FirstTgtBootLun">0</Attribute> -->
-    <!-- <Attribute Name="FirstTgtIscsiName"></Attribute> -->
-    <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
-</Component>
-<Component FQDD="NIC.Integrated.1-1-1">
-    <Attribute Name="BlnkLeds">0</Attribute>
-    <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
-    <Attribute Name="VirtualizationMode">SRIOV</Attribute>
-    <!-- <Attribute Name="NParEP">Disabled</Attribute> -->
-    <Attribute Name="LegacyBootProto">PXE</Attribute>
-    <Attribute Name="WakeOnLan">Disabled</Attribute>
-    <!-- <Attribute Name="VLanId">0</Attribute> -->
-    <Attribute Name="NumberVFAdvertised">64</Attribute>
-    <Attribute Name="TcpIpViaDHCP">Enabled</Attribute>
-    <Attribute Name="IscsiViaDHCP">Enabled</Attribute>
-    <Attribute Name="ChapAuthEnable">Disabled</Attribute>
-    <!-- <Attribute Name="ChapMutualAuth">Disabled</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorIpAddr">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorSubnet">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorGateway">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorName"></Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorChapId"></Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorChapPwd"></Attribute> -->
-    <!-- <Attribute Name="FirstTgtIpAddress">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="FirstTgtTcpPort">3260</Attribute> -->
-    <!-- <Attribute Name="FirstTgtBootLun">0</Attribute> -->
-    <!-- <Attribute Name="FirstTgtIscsiName"></Attribute> -->
-    <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
-    <!-- <Attribute Name="VFDistribution">64:0:0:0:0:0:0:0</Attribute> -->
-</Component>
-<Component FQDD="NIC.Integrated.1-2-1">
-    <Attribute Name="BlnkLeds">0</Attribute>
-    <!-- <Attribute Name="VirtMacAddr">00:00:00:00:00:00</Attribute> -->
-    <Attribute Name="VirtualizationMode">SRIOV</Attribute>
-    <!-- <Attribute Name="NParEP">Disabled</Attribute> -->
-    <Attribute Name="LegacyBootProto">PXE</Attribute>
-    <Attribute Name="WakeOnLan">Disabled</Attribute>
-    <!-- <Attribute Name="VLanId">0</Attribute> -->
-    <Attribute Name="NumberVFAdvertised">64</Attribute>
-    <Attribute Name="TcpIpViaDHCP">Enabled</Attribute>
-    <Attribute Name="IscsiViaDHCP">Enabled</Attribute>
-    <Attribute Name="ChapAuthEnable">Disabled</Attribute>
-    <!-- <Attribute Name="ChapMutualAuth">Disabled</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorIpAddr">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorSubnet">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorGateway">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorName"></Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorChapId"></Attribute> -->
-    <!-- <Attribute Name="IscsiInitiatorChapPwd"></Attribute> -->
-    <!-- <Attribute Name="FirstTgtIpAddress">0.0.0.0</Attribute> -->
-    <!-- <Attribute Name="FirstTgtTcpPort">3260</Attribute> -->
-    <!-- <Attribute Name="FirstTgtBootLun">0</Attribute> -->
-    <!-- <Attribute Name="FirstTgtIscsiName"></Attribute> -->
-    <!-- <Attribute Name="FirstTgtChapPwd"></Attribute> -->
-    <!-- <Attribute Name="VFDistribution">64:0:0:0:0:0:0:0</Attribute> -->
-</Component>
-
-<Component FQDD="RAID.Integrated.1-1">
-    <Attribute Name="RAIDresetConfig">False</Attribute>
-    <Attribute Name="RAIDforeignConfig">Ignore</Attribute>
-    <!-- <Attribute Name="CurrentControllerMode">RAID</Attribute> -->
-    <Attribute Name="RAIDrekey">False</Attribute>
-    <Attribute Name="EncryptionMode">None</Attribute>
-    <!-- <Attribute Name="KeyID"></Attribute> -->
-    <!-- <Attribute Name="OldControllerKey">******</Attribute> -->
-    <!-- <Attribute Name="NewControllerKey">******</Attribute> -->
-    <Attribute Name="RAIDprMode">Automatic</Attribute>
-    <Attribute Name="RAIDPatrolReadUnconfiguredArea">Enabled</Attribute>
-    <Attribute Name="RAIDloadBalancedMode">Automatic</Attribute>
-    <Attribute Name="RAIDccMode">Normal</Attribute>
-    <Attribute Name="RAIDcopybackMode">On</Attribute>
-    <Attribute Name="RAIDpersistentHotspare">Disabled</Attribute>
-    <Attribute Name="RAIDControllerBootMode">Continue Boot On Error</Attribute>
-    <Attribute Name="RAIDEnhancedAutoImportForeignConfig">Disabled</Attribute>
-    <Attribute Name="RAIDrebuildRate">30</Attribute>
-    <Attribute Name="RAIDbgiRate">30</Attribute>
-    <Attribute Name="RAIDccRate">30</Attribute>
-    <Attribute Name="RAIDreconstructRate">30</Attribute>
-    <Component FQDD="Disk.Virtual.0:RAID.Integrated.1-1">
-        <Attribute Name="RAIDaction">Update</Attribute>
-        <Attribute Name="LockStatus">Unlocked</Attribute>
-        <Attribute Name="BootVD">True</Attribute>
-        <Attribute Name="RAIDinitOperation">None</Attribute>
-        <Attribute Name="DiskCachePolicy">Default</Attribute>
-        <Attribute Name="RAIDdefaultWritePolicy">WriteBack</Attribute>
-        <Attribute Name="RAIDdefaultReadPolicy">ReadAhead</Attribute>
-        <!-- <Attribute Name="Name">Virtual Disk 0</Attribute> -->
-        <!-- <Attribute Name="Size">1919716163584</Attribute> -->
-        <!-- <Attribute Name="StripeSize">128</Attribute> -->
-        <!-- <Attribute Name="SpanDepth">1</Attribute> -->
-        <!-- <Attribute Name="SpanLength">2</Attribute> -->
-        <!-- <Attribute Name="RAIDTypes">RAID 1</Attribute> -->
-        <!-- <Attribute Name="IncludedPhysicalDiskID">Disk.Bay.0:Enclosure.Internal.0-1:RAID.Integrated.1-1</Attribute> -->
-        <!-- <Attribute Name="IncludedPhysicalDiskID">Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1</Attribute> -->
-    </Component>
-    <Component FQDD="Enclosure.Internal.0-1:RAID.Integrated.1-1">
-        <Component FQDD="Disk.Bay.0:Enclosure.Internal.0-1:RAID.Integrated.1-1">
-            <!-- <Attribute Name="RAIDHotSpareStatus">No</Attribute> -->
-            <!-- <Attribute Name="RAIDPDState">Online</Attribute> -->
-        </Component>
-        <Component FQDD="Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1">
-            <!-- <Attribute Name="RAIDHotSpareStatus">No</Attribute> -->
-            <!-- <Attribute Name="RAIDPDState">Online</Attribute> -->
-        </Component>
-    </Component>
-    <Attribute Name="RAIDremoveControllerKey">False</Attribute>
 </Component>
 
 </SystemConfiguration>
