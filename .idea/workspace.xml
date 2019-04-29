@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8585d4ec-eb38-479f-a740-120601a36ab2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dell/xmlparse.py" afterPath="$PROJECT_DIR$/dell/xmlparse.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/xmlparse$GetFirmwareInventoryREDFISH.coverage" NAME="GetFirmwareInventoryREDFISH Coverage Results" MODIFIED="1545143364065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dell/iDRAC-Redfish-Scripting/Redfish Python" />
-    <SUITE FILE_PATH="coverage/xmlparse640$xmlparse.coverage" NAME="xmlparse Coverage Results" MODIFIED="1556453151632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dell" />
+    <SUITE FILE_PATH="coverage/xmlparse640$xmlparse.coverage" NAME="xmlparse Coverage Results" MODIFIED="1556513156702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dell" />
     <SUITE FILE_PATH="coverage/xmlparse$GetIdracLcSystemAttributesREDFISH.coverage" NAME="GetIdracLcSystemAttributesREDFISH Coverage Results" MODIFIED="1545131744971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dell/iDRAC-Redfish-Scripting/Redfish Python/good" />
     <SUITE FILE_PATH="coverage/xmlparse$fupd.coverage" NAME="fupd Coverage Results" MODIFIED="1546871365083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../eatonfwupd" />
     <SUITE FILE_PATH="coverage/xmlparse$xmlparse.coverage" NAME="xmlparse Coverage Results" MODIFIED="1549983377390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dell" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="xmlparse.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dell/xmlparse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+            <state relative-caret-position="168">
+              <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
               <folding>
                 <element signature="e#53#81#0" expanded="true" />
               </folding>
@@ -45,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/dell/ConfigurationInventory.golden">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="734">
-              <caret line="410" column="18" lean-forward="true" selection-start-line="410" selection-start-column="18" selection-end-line="410" selection-end-column="38" />
+              <caret line="410" column="18" lean-forward="false" selection-start-line="410" selection-start-column="18" selection-end-line="410" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -62,8 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cal</find>
-      <find>BootOrder</find>
       <find>ETarget</find>
       <find>time</find>
       <find>orange</find>
@@ -92,6 +89,8 @@
       <find>rewr</find>
       <find>gateway</find>
       <find>'10.160.231.172-211'</find>
+      <find>rewrit</find>
+      <find>M393A2K43CB2-CTD</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -815,15 +814,15 @@
     <entry file="file://$PROJECT_DIR$/dell/ConfigurationInventory.golden">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="734">
-          <caret line="410" column="18" lean-forward="true" selection-start-line="410" selection-start-column="18" selection-end-line="410" selection-end-column="38" />
+          <caret line="410" column="18" lean-forward="false" selection-start-line="410" selection-start-column="18" selection-end-line="410" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dell/xmlparse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        <state relative-caret-position="168">
+          <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
           <folding>
             <element signature="e#53#81#0" expanded="true" />
           </folding>

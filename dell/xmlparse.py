@@ -32,11 +32,13 @@ def colnum_string(n):
 running = True
 hardware_golden = 'HardwareInventory.golden'
 configuration_golden = 'ConfigurationInventory.golden'
+#PN patch - in case of not only golden's PN's accepted
+allowedPNs = ["M393A2K43CB2-CTD"]
 #pdus/sensors lists
 sensors = {'sensor1': 'Front-Down', 'sensor2': 'Front-Up', 'sensor3': 'Rear-Down', 'sensor4': 'Rear-Up'}
 pdus=['10.48.228.51', '10.48.228.52', '10.48.228.53', '10.48.228.54']
 #idrac range
-idrac_ip='10.160.231.172-211'
+idrac_ips= '10.160.231.172-211'
 #servers count for power test
 servers_count=40
 #additional attributes to collect for dynamic configuration data (FQDD, <!-- <Attribute Name=" ....)
@@ -184,7 +186,7 @@ def main(argv):
     #network scan
     def nmapscan():
         nm = nmap.PortScanner()
-        nm.scan(idrac_ip, '22')
+        nm.scan(idrac_ips, '22')
         """Sort an IP address list."""
         ipl = [(IP(ip).int(), ip) for ip in nm.all_hosts()]
         ipl.sort()
@@ -596,7 +598,7 @@ def report_analyze(currep):
                 data_per.append({curr_val: 4, 'golden': master_item})
             else:
                 # memory PN fix
-                if curr_val == "M393A2K43CB2-CTD" and curr_val != master_item:
+                if curr_val in allowedPNs and curr_val != master_item:
                     data_per.append({curr_val: 1, 'golden': master_item})
                 else:
                     data_per.append({curr_val: int(master_item == curr_val), 'golden': master_item})
