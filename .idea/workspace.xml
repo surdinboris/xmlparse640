@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8585d4ec-eb38-479f-a740-120601a36ab2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dell/HardwareInventory630.golden" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/conf_golden.xml_" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/golden_640_all.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/nex2.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dell/HardwareInventory.golden640" afterPath="$PROJECT_DIR$/dell/HardwareInventory.golden" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dell/ConfigurationInventory.golden" afterPath="$PROJECT_DIR$/dell/ConfigurationInventory.golden" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dell/xmlparse.py" afterPath="$PROJECT_DIR$/dell/xmlparse.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +32,8 @@
       <file leaf-file-name="xmlparse.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dell/xmlparse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="601" column="0" lean-forward="true" selection-start-line="601" selection-start-column="0" selection-end-line="601" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
               <folding>
                 <element signature="e#53#81#0" expanded="true" />
               </folding>
@@ -50,12 +44,9 @@
       <file leaf-file-name="ConfigurationInventory.golden" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dell/ConfigurationInventory.golden">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-              <folding>
-                <marker date="1556446174000" expanded="true" signature="145688:145709" ph="..." />
-                <marker date="1556446174000" expanded="true" signature="145688:145726" ph="..." />
-              </folding>
+            <state relative-caret-position="734">
+              <caret line="410" column="18" lean-forward="true" selection-start-line="410" selection-start-column="18" selection-end-line="410" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,14 +62,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>IPv4</find>
-      <find>IPv4st</find>
       <find>cal</find>
       <find>BootOrder</find>
       <find>ETarget</find>
       <find>time</find>
       <find>orange</find>
-      <find>rewr</find>
       <find>NIC.Integrated.1-2-1</find>
       <find>FQDD</find>
       <find>red</find>
@@ -101,6 +89,9 @@
       <find>add</find>
       <find>additional_conf_collect</find>
       <find>UefiBootSeq</find>
+      <find>rewr</find>
+      <find>gateway</find>
+      <find>'10.160.231.172-211'</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -538,6 +529,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2777778" sideWeight="0.5106496" order="0" side_tool="true" content_ui="tabs" />
@@ -545,7 +537,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.02895323" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32666665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12555556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13326226" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13326226" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24920128" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.026726058" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -822,19 +814,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dell/ConfigurationInventory.golden">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-          <folding>
-            <marker date="1556446174000" expanded="true" signature="145688:145709" ph="..." />
-            <marker date="1556446174000" expanded="true" signature="145688:145726" ph="..." />
-          </folding>
+        <state relative-caret-position="734">
+          <caret line="410" column="18" lean-forward="true" selection-start-line="410" selection-start-column="18" selection-end-line="410" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dell/xmlparse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="601" column="0" lean-forward="true" selection-start-line="601" selection-start-column="0" selection-end-line="601" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
           <folding>
             <element signature="e#53#81#0" expanded="true" />
           </folding>

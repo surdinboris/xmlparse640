@@ -35,9 +35,10 @@ configuration_golden = 'ConfigurationInventory.golden'
 #pdus/sensors lists
 sensors = {'sensor1': 'Front-Down', 'sensor2': 'Front-Up', 'sensor3': 'Rear-Down', 'sensor4': 'Rear-Up'}
 pdus=['10.48.228.51', '10.48.228.52', '10.48.228.53', '10.48.228.54']
-
+#idrac range
+idrac_ip='10.160.231.172-211'
 #servers count for power test
-servers_count=26
+servers_count=40
 #additional attributes to collect for dynamic configuration data (FQDD, <!-- <Attribute Name=" ....)
 additional_conf_collect = {}
 additional_conf_collect.update({"Disk.Virtual.0:RAID.Integrated.1-1": ['Name', 'Size', 'StripeSize', 'SpanDepth', 'SpanLength', 'RAIDTypes', 'IncludedPhysicalDiskID'], "BIOS.Setup.1-1":['UefiBootSeq']})
@@ -183,7 +184,7 @@ def main(argv):
     #network scan
     def nmapscan():
         nm = nmap.PortScanner()
-        nm.scan('10.160.231.172-211', '22')
+        nm.scan(idrac_ip, '22')
         """Sort an IP address list."""
         ipl = [(IP(ip).int(), ip) for ip in nm.all_hosts()]
         ipl.sort()
