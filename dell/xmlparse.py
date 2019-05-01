@@ -33,12 +33,15 @@ running = True
 hardware_golden = 'HardwareInventory.golden'
 configuration_golden = 'ConfigurationInventory.golden'
 #PN patch - in case of not only golden's PN's accepted
-allowedPNs = ["M393A2K43CB2-CTD"]
+allowedPNs = ["M393A2K43CB2-CTD","18ASF2G72PDZ-2G6D1"]
 #pdus/sensors lists
 sensors = {'sensor1': 'Front-Down', 'sensor2': 'Front-Up', 'sensor3': 'Rear-Down', 'sensor4': 'Rear-Up'}
 pdus=['10.48.228.51', '10.48.228.52', '10.48.228.53', '10.48.228.54']
 #idrac range
-idrac_ips= '10.160.231.172-211'
+#melbourn
+# idrac_ips= '10.160.231.172-211'
+#sydney
+idrac_ips= '10.176.231.172-211'
 #servers count for power test
 servers_count=40
 #additional attributes to collect for dynamic configuration data (FQDD, <!-- <Attribute Name=" ....)
@@ -741,7 +744,10 @@ def writesummary(workbook,worksheet):
                         elif value == 0:
                             #print('conf error',confitem, key,value)
                             conf_passed=0
-                            conf_error.append('Wrong value: of {},got {}  should be  {}'.format(confsingle, key, confitem['golden']))
+                            if key == 'additional':
+                                conf_error.append('Additional data of {}, with value found {}'.format(confsingle, confitem['golden']))
+                            else:
+                                conf_error.append('Wrong value: of {},got {}  should be  {}'.format(confsingle, key, confitem['golden']))
                         elif value == 2:
                             pass
 
@@ -777,9 +783,11 @@ def writesummary(workbook,worksheet):
                             if maxheight == 2:
                                 coords = '{}1'.format(colnum_string(ind))
                                 worksheet.write(coords, toStr(hwfamily, coords), header_cell)
-
                             # print('>>',hwfamily, hwitem)
-                            hw_error.append('Wrong value: of {},got {}  should be  {} '.format(hwfamily, key, hwitem['golden']))
+                            if key == 'additional':
+                                hw_error.append('Additional data of {}, with value found {}'.format(hwfamily, hwitem['golden']))
+                            else:
+                                hw_error.append('Wrong value: of {},got {}  should be  {} '.format(hwfamily, key, hwitem['golden']))
                         elif value == 2:
                             hwfamily_pass = 2
                             if hwfamily == "ServiceTag":
