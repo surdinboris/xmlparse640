@@ -2,63 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8585d4ec-eb38-479f-a740-120601a36ab2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/1H8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/1H8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/2F8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/2F8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/2K3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/2K3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/2L3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/2L3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/3F8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/3F8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/3L3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/3L3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/4L3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/4L3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/6G8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/6G8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/7G8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/7G8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/7J3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/7J3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/7K3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/7K3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/8G8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/8G8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/9G8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/9G8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/9J3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/9J3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/BG8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/BG8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/BJ3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/BJ3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/CJ3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/CJ3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/DD8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/DD8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/DJ3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/DJ3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/FJ3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/FJ3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/GD8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/GD8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/GF8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/GF8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/GJ3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/GJ3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/HD8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/HD8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/HG8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/HG8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/HH3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/HH3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/JD8K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/JD8K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/JJ3K2W2_config_report_conf_passed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/offline/JJ3K2W2_hwinvent_report_hw_passed.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dell/HardwareInventory.golden" afterPath="$PROJECT_DIR$/dell/HardwareInventory.golden" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dell/xmlparse.py" afterPath="$PROJECT_DIR$/dell/xmlparse.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,8 +32,8 @@
       <file leaf-file-name="xmlparse.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dell/xmlparse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="783" column="73" lean-forward="true" selection-start-line="783" selection-start-column="73" selection-end-line="783" selection-end-column="73" />
+            <state relative-caret-position="382">
+              <caret line="216" column="20" lean-forward="false" selection-start-line="216" selection-start-column="20" selection-end-line="216" selection-end-column="20" />
               <folding>
                 <element signature="e#53#81#0" expanded="true" />
               </folding>
@@ -100,7 +44,7 @@
       <file leaf-file-name="ConfigurationInventory.golden" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dell/ConfigurationInventory.golden">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="734">
+            <state relative-caret-position="8610">
               <caret line="410" column="18" lean-forward="false" selection-start-line="410" selection-start-column="18" selection-end-line="410" selection-end-column="38" />
               <folding />
             </state>
@@ -118,7 +62,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>NIC.Integrated.1-2-1</find>
       <find>FQDD</find>
       <find>red</find>
       <find>writesumma</find>
@@ -148,6 +91,7 @@
       <find>should</find>
       <find>'config_report'</find>
       <find>Wrong</find>
+      <find>failover</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,10 +137,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="245" />
-    <option name="y" value="19" />
-    <option name="width" value="1570" />
-    <option name="height" value="1046" />
+    <option name="x" value="183" />
+    <option name="y" value="40" />
+    <option name="width" value="1437" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -215,7 +159,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,6 +187,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -584,21 +528,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="245" y="19" width="1570" height="1046" extended-state="0" />
+    <frame x="183" y="40" width="1437" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14648296" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2777778" sideWeight="0.5106496" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14076577" sideWeight="0.48935038" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.02895323" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32666665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12555556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21059602" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14076577" sideWeight="0.48935038" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24920128" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.026726058" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21714923" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12555556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21714923" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -607,6 +550,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24444444" sideWeight="0.49570355" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.026726058" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -800,77 +744,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="1253" column="8" lean-forward="false" selection-start-line="1253" selection-start-column="8" selection-end-line="1253" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dell/.~lock.summary_19042019_12-42-57.xlsx#">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dell/offline/conf_golden.xml_">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dell/r640_bios_golden.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dell/xmlparse_good.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="559" column="33" lean-forward="false" selection-start-line="559" selection-start-column="7" selection-end-line="559" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dell/offline/golden_640_all.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3522">
-          <caret line="553" column="64" lean-forward="true" selection-start-line="553" selection-start-column="64" selection-end-line="553" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dell/offline/nex2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="1618" column="33" lean-forward="false" selection-start-line="1618" selection-start-column="23" selection-end-line="1618" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dell/golden_640_all.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="411" column="1" lean-forward="false" selection-start-line="411" selection-start-column="1" selection-end-line="411" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dell/offline/6G8K2W2_config_report_conf_orig.tmp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="2317" column="44" lean-forward="false" selection-start-line="2317" selection-start-column="33" selection-end-line="2317" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dell/.~lock.summary_19042019_12-42-57.xlsx#" />
+    <entry file="file://$PROJECT_DIR$/dell/offline/conf_golden.xml_" />
+    <entry file="file://$PROJECT_DIR$/dell/r640_bios_golden.xml" />
+    <entry file="file://$PROJECT_DIR$/dell/xmlparse_good.py" />
+    <entry file="file://$PROJECT_DIR$/dell/offline/golden_640_all.xml" />
+    <entry file="file://$PROJECT_DIR$/dell/offline/nex2.xml" />
+    <entry file="file://$PROJECT_DIR$/dell/golden_640_all.xml" />
+    <entry file="file://$PROJECT_DIR$/dell/offline/6G8K2W2_config_report_conf_orig.tmp.xml" />
     <entry file="file://$PROJECT_DIR$/dell/ConfigurationInventory.golden">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
+        <state relative-caret-position="8610">
           <caret line="410" column="18" lean-forward="false" selection-start-line="410" selection-start-column="18" selection-end-line="410" selection-end-column="38" />
           <folding />
         </state>
@@ -878,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dell/xmlparse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="783" column="73" lean-forward="true" selection-start-line="783" selection-start-column="73" selection-end-line="783" selection-end-column="73" />
+        <state relative-caret-position="382">
+          <caret line="216" column="20" lean-forward="false" selection-start-line="216" selection-start-column="20" selection-end-line="216" selection-end-column="20" />
           <folding>
             <element signature="e#53#81#0" expanded="true" />
           </folding>

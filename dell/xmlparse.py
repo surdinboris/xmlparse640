@@ -36,11 +36,17 @@ configuration_golden = 'ConfigurationInventory.golden'
 allowedPNs = ["M393A2K43CB2-CTD","18ASF2G72PDZ-2G6D1"]
 #pdus/sensors lists
 sensors = {'sensor1': 'Front-Down', 'sensor2': 'Front-Up', 'sensor3': 'Rear-Down', 'sensor4': 'Rear-Up'}
-pdus=['10.48.228.51', '10.48.228.52', '10.48.228.53', '10.48.228.54']
+#PDU's
+# sydney
+pdus=['10.160.231.171', '10.48.228.52', '10.48.228.53', '10.48.228.54']
+
+#melbourne
+# pdus=['10.176.231.171', '10.176.231.170', '10.176.231.169', '10.176.231.168']
+
 #idrac range
-#melbourn
-# idrac_ips= '10.160.231.172-211'
 #sydney
+# idrac_ips= '10.160.231.172-211'
+#melbourne
 idrac_ips= '10.176.231.172-211'
 #servers count for power test
 servers_count=40
@@ -202,12 +208,13 @@ def main(argv):
         print('.' * 40)
         return ipl
     #pdu operations
+    #servertec
     def sendcom(tel, cmd=b""):
         tel.write(cmd)
         tel.write(bytes("\r", encoding='ascii'))
 
     def login(tel):
-        user = 'root'
+        user = 'admn'
         password = 'wildcat1'
         tel.read_until(b"Username:")
         sendcom(tel, user.encode())
@@ -240,7 +247,47 @@ def main(argv):
             temp = re.search('Reading:\s+(\d+\.\d)', temp_output).group(1)
             wattage = re.search('Active Power:\s+(\d+)', pow_output).group(1)
             return {'wattage': wattage, 'temp': temp}
-
+        #raritan ver
+        #
+        # # pdu operations
+        # def sendcom(tel, cmd=b""):
+        #     tel.write(cmd)
+        #     tel.write(bytes("\r", encoding='ascii'))
+        #
+        # def login(tel):
+        #     user = 'root'
+        #     password = 'wildcat1'
+        #     tel.read_until(b"Username:")
+        #     sendcom(tel, user.encode())
+        #     tel.read_until(b"Password:")
+        #     sendcom(tel, password.encode())
+        #     tel.read_until(b"#")
+        #
+        # def pdu_command(host, cmd):
+        #     tel = telnetlib.Telnet(host)
+        #     login(tel)
+        #     # print(cmd.encode())
+        #     sendcom(tel, cmd.encode())
+        #     tel.read_until(b"[y/n]")
+        #     # print('y/n')
+        #     sendcom(tel, 'y'.encode())
+        #     tel.read_until(b"#")
+        #     sendcom(tel, b'exit')
+        #
+        # def sensorscheck(pdu):
+        #     with telnetlib.Telnet(pdu) as t:
+        #         t.read_until(b'Username:')
+        #         t.write(b'root\n')
+        #         t.read_until(b'Password:')
+        #         t.write(b'wildcat1\n')
+        #         t.read_until(b"#")
+        #         t.write(b'show sensor externalsensor 2\n')
+        #         temp_output = t.read_until(b"#").decode('utf-8')
+        #         t.write(b'show inlets details\n')
+        #         pow_output = t.read_until(b"#").decode('utf-8')
+        #         temp = re.search('Reading:\s+(\d+\.\d)', temp_output).group(1)
+        #         wattage = re.search('Active Power:\s+(\d+)', pow_output).group(1)
+        #         return {'wattage': wattage, 'temp': temp}
 
     def failover_check():
         print_to_gui('Starting pdu failover check')
