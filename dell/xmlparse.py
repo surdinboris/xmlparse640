@@ -38,8 +38,8 @@ allowedPNs = ["M393A2K43CB2-CTD","18ASF2G72PDZ-2G6D1"]
 sensors = {'sensor1': 'Front-Down', 'sensor2': 'Front-Up', 'sensor3': 'Rear-Down', 'sensor4': 'Rear-Up'}
 #PDU's
 # sydney
-pdus=['10.160.231.171', '10.48.228.52', '10.48.228.53', '10.48.228.54']
-
+#pdus=['10.160.231.171', '10.48.228.52', '10.48.228.53', '10.48.228.54']
+pdus=['192.168.1.254']
 #melbourne
 # pdus=['10.176.231.171', '10.176.231.170', '10.176.231.169', '10.176.231.168']
 
@@ -220,17 +220,17 @@ def main(argv):
         sendcom(tel, user.encode())
         tel.read_until(b"Password:")
         sendcom(tel, password.encode())
-        tel.read_until(b"#")
+        tel.read_until(b"Switched CDU:")
 
     def pdu_command(host, cmd):
         tel = telnetlib.Telnet(host)
         login(tel)
         #print(cmd.encode())
         sendcom(tel,cmd.encode())
-        tel.read_until(b"[y/n]")
+        #tel.read_until(b"Command successful")
         #print('y/n')
-        sendcom(tel,'y'.encode())
-        tel.read_until(b"#")
+        #sendcom(tel,'y'.encode())
+        tel.read_until(b"Switched CDU:")
         sendcom(tel, b'exit')
 
     def sensorscheck(pdu):
@@ -239,13 +239,13 @@ def main(argv):
             t.write(b'root\n')
             t.read_until(b'Password:')
             t.write(b'wildcat1\n')
-            t.read_until(b"#")
-            t.write(b'show sensor externalsensor 2\n')
-            temp_output = t.read_until(b"#").decode('utf-8')
-            t.write(b'show inlets details\n')
-            pow_output = t.read_until(b"#").decode('utf-8')
-            temp = re.search('Reading:\s+(\d+\.\d)', temp_output).group(1)
-            wattage = re.search('Active Power:\s+(\d+)', pow_output).group(1)
+            t.read_until(b"Switched CDU:")
+            t.write(b'envmon\n')
+            temp_output = t.read_until(b"Switched CDU:").decode('utf-8')
+            t.write(b'sysstat\n')
+            pow_output = t.read_until(b"Switched CDU:").decode('utf-8')
+            temp = re.search('.*A1\s*Temp_Humid_Sensor_A1\s*(\d+).*', temp_output).group(1)
+            wattage = re.search('Total Power Consumption:\s+(\d+)', pow_output).group(1)
             return {'wattage': wattage, 'temp': temp}
         #raritan ver
         #
