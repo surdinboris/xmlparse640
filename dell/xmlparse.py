@@ -39,6 +39,7 @@ sensors = {'sensor1': 'Front-Down', 'sensor2': 'Front-Up', 'sensor3': 'Rear-Down
 tempsensnames = {1: 'A', 2: 'B', 3: 'A', 4: 'B'}
 
 # sydney
+
 pdus={'10.160.231.171': [1, 2], '10.160.231.169': [3, 4]}
 idrac_ips= '10.160.231.172-211'
 
@@ -219,7 +220,7 @@ def main(argv):
         sendcom(tel, user.encode())
         tel.read_until(b"Password:")
         sendcom(tel, password.encode())
-        tel.read_until(b"Switched CDU:")
+        tel.read_until(b"Switched PDU:")
 
     def pdu_command(host, cmd):
         tel = telnetlib.Telnet(host)
@@ -229,24 +230,28 @@ def main(argv):
         # tel.read_until(b"Command successful")
         # print('y/n')
         # sendcom(tel,'y'.encode())
-        tel.read_until(b"Switched CDU:")
+        tel.read_until(b"Switched PDU:")
         sendcom(tel, b'exit')
 
     def sensorscheck(pdu, grp):
+        #print("sensorchk",pdu, grp)
         with telnetlib.Telnet(pdu) as t:
             t.read_until(b'Username:')
             t.write(b'admn\n')
             t.read_until(b'Password:')
             t.write(b'wildcat1\n')
-            t.read_until(b"Switched CDU:")
-            t.write(b'envmon\n')
-            temp_output = t.read_until(b"Switched CDU:").decode('utf-8')
-            print(temp_output)
-            t.write(b'sysstat\n')
-            pow_output = t.read_until(b"Switched CDU:").decode('utf-8')
-            print(pow_output)
-            temp = re.search('.*{}1\s*Temp_Humid_Sensor_{}1\s*(\d+|Not Found).*'.format(grp, grp), temp_output).group(1)
-            wattage = re.search('Total Power Consumption:\s+(\d+|Not Found)', pow_output).group(1)
+            t.read_until(b"Switched PDU:")
+            t.write(b'senstat\n')
+            temp_output = t.read_until(b"Switched PDU:").decode('utf-8')
+            #print(temp_output)
+            t.write(b'cstat\n')
+            pow_output = t.read_until(b"Switched PDU:").decode('utf-8')
+            # print(pow_output)
+            temp = re.search('.*{}1\s*Temp_Sensor_{}1\s*(\d+\.\d|Not Found).*'.format(grp, grp), temp_output).group(1)
+            wattage = re.search('.*{}A.\s+(\d+)W.*'.format(grp), pow_output).group(1)
+            t.write(b'exit\n')
+            time.sleep(5)
+            #print({'wattage': wattage, 'temp': temp})
             return {'wattage': wattage, 'temp': temp}
         #raritan ver
         #
@@ -300,28 +305,37 @@ def main(argv):
                 pdu_command(pdu, 'off {}'.format(pgroup))
                 time.sleep(5)
                 if len(nmapscan()) == servers_count:
-                    print_to_gui('All {} system servers are online')  # .format(len(nmapscan())))
+                    print_to_gui('All {} system servers are online'.format(len(nmapscan())))
                     pdu_command(pdu, 'on {}'.format(pgroup))
-                    time.sleep(30)
+                    time.sleep(60)
                     failoverresult['PDU-{}'.format(pgroup)]['result'] = 'pass'
                 else:
-                    print_to_gui(
-                        'Error: found {} active servers, while should be {}')  # .format(len(nmapscan()), servers_count))
+                    print_to_gui('Error: found {} active servers, while should be {}'.format(len(nmapscan()), servers_count))
                     pdu_command(pdu, 'on {}'.format(pgroup))
                     failoverresult['PDU-{}'.format(pgroup)]['result'] = 'fail'
                     # pdu_command(pdu, 'power outlets all on')
-                    time.sleep(30)
-        #checking sensors
-        for wpdu in pdus:
-            pgroups = pdus[wpdu]
-            for pgroup in pgroups:
-                print_to_gui('Checking wattage and temperature for sensor{}'.format(pgroup))
-                # creating sensor record
-                sensor = failoverresult['PDU-{}'.format(pgroup)]['sensor{}'.format(pgroup)] = {}
-                sensorsdata = sensorscheck(wpdu, tempsensnames[pgroup])
-                sensor['wattage'] = sensorsdata['wattage']
-                sensor['temp'] = sensorsdata['temp']
-
+                    time.sleep(60)
+                    return
+                    # checking sensors
+                for wnum, wpdu in enumerate(pdus, 1):
+                    wpgroups = pdus[wpdu]
+                    for wpgroup in wpgroups:
+                        print_to_gui('Checking wattage and temperature for sensor{}'.format(wpgroup))
+                        # creating sensor record
+                        sensor = failoverresult['PDU-{}'.format(pgroup)]['sensor{}'.format(wpgroup)] = {}
+                        sensorsdata = sensorscheck(wpdu, tempsensnames[wpgroup])
+                        sensor['wattage'] = sensorsdata['wattage']
+                        sensor['temp'] = sensorsdata['temp']
+        # #checking sensors
+        # for wpdu in pdus:
+        #     pgroups = pdus[wpdu]
+        #     for pgroup in pgroups:
+        #         print_to_gui('Checking wattage and temperature for sensor{}'.format(pgroup))
+        #         # creating sensor record
+        #         sensor = failoverresult['PDU-{}'.format(pgroup)]['sensor{}'.format(pgroup)] = {}
+        #         sensorsdata = sensorscheck(wpdu, tempsensnames[pgroup])
+        #         sensor['wattage'] = sensorsdata['wattage']
+        #         sensor['temp'] = sensorsdata['temp']
     def disbutt(opt):
         for bu in buttons:
             bu['state'] = opt
@@ -970,7 +984,7 @@ def writesummary(workbook,worksheet):
             if failoverresult[res]['result'] == 'pass':
                 worksheet.write(coords, toStr("{} {}".format(res, failoverresult[res]['result']), coords), green_cell)
                 #iretation over sensors based on global sensors\pdu amount
-                for snum, sres in enumerate(pdus, 1):
+                for snum, sres in enumerate(failoverresult, 1):
                     pdu = 'PDU-%s' % snum
                     sensor = 'sensor%s' % snum
                     #writing wattage

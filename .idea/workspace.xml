@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8585d4ec-eb38-479f-a740-120601a36ab2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/.~lock.summary_25042019_10-57-23.xlsx#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/.~lock.summary_25042019_10-58-29.xlsx#" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dell/xmlparse.py" afterPath="$PROJECT_DIR$/dell/xmlparse.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +34,8 @@
       <file leaf-file-name="xmlparse.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dell/xmlparse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="218">
+              <caret line="236" column="9" lean-forward="false" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
               <folding>
                 <element signature="e#53#81#0" expanded="true" />
               </folding>
@@ -44,8 +46,8 @@
       <file leaf-file-name="pdutest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pdutest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="76" />
+            <state relative-caret-position="683">
+              <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -64,9 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>FQDD</find>
-      <find>red</find>
-      <find>writesumma</find>
       <find>ip</find>
       <find>DaylightOffset</find>
       <find>HMA82GR7AFR8N-VK</find>
@@ -94,6 +93,9 @@
       <find>'config_report'</find>
       <find>Wrong</find>
       <find>failover</find>
+      <find>sensor</find>
+      <find>rarit</find>
+      <find>sensorch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,9 +142,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="101" />
-    <option name="y" value="8" />
-    <option name="width" value="1437" />
+    <option name="x" value="229" />
+    <option name="y" value="58" />
+    <option name="width" value="1600" />
     <option name="height" value="1029" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -531,10 +533,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="101" y="8" width="1437" height="1029" extended-state="0" />
+    <frame x="229" y="58" width="1600" height="1029" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14648296" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1309987" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2777778" sideWeight="0.5106496" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -564,7 +566,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="29" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -762,8 +764,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pdutest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="76" />
+        <state relative-caret-position="683">
+          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
@@ -772,8 +774,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dell/xmlparse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="218">
+          <caret line="236" column="9" lean-forward="false" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
           <folding>
             <element signature="e#53#81#0" expanded="true" />
           </folding>
