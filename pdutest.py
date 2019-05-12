@@ -3,7 +3,7 @@ import time
 import re
 
 # pdus={'10.160.231.171': [1, 2], '10.160.231.170': [3, 4]}#, '10.160.231.169', '10.160.231.168']
-pdus={'192.168.1.254': [1, 2]}
+pdus={'192.168.1.254': [1]}
 
 
 
@@ -57,25 +57,25 @@ def sensorscheck(pdu, grp):
         return {'wattage': wattage, 'temp': temp}
 
 print_to_gui = print
-# for pdu in pdus:
-#     pgroups=pdus[pdu]
-#     for pgroup in pgroups:
-#         print('System powered without PDU-{}'.format(pgroup))
-#         print_to_gui('turning off PDU-{}'.format(pgroup))
-#         pdu_command(pdu, 'off {}'.format(pgroup))
-#         time.sleep(5)
-#         #if len(nmapscan()) == servers_count:
-#         if True:
-#             print_to_gui('All {} system servers are online')#.format(len(nmapscan())))
-#             pdu_command(pdu, 'on {}'.format(pgroup))
-#             time.sleep(30)
-#             failoverresult['PDU-{}'.format(pgroup)]['result'] = 'pass'
-#         else:
-#             print_to_gui('Error: found {} active servers, while should be {}')#.format(len(nmapscan()), servers_count))
-#             pdu_command(pdu, 'on {}'.format(pgroup))
-#             failoverresult['PDU-{}'.format(pgroup)]['result'] = 'fail'
-#             #pdu_command(pdu, 'power outlets all on')
-#             time.sleep(30)
+for pdu in pdus:
+    pgroups=pdus[pdu]
+    for pgroup in pgroups:
+        print('System powered without PDU-{}'.format(pgroup))
+        print_to_gui('turning off PDU-{}'.format(pgroup))
+        pdu_command(pdu, 'off {}'.format(pgroup))
+        time.sleep(5)
+        #if len(nmapscan()) == servers_count:
+        if True:
+            print_to_gui('All {} system servers are online')#.format(len(nmapscan())))
+            pdu_command(pdu, 'on {}'.format(pgroup))
+            time.sleep(10)
+            failoverresult['PDU-{}'.format(pgroup)]['result'] = 'pass'
+        else:
+            print_to_gui('Error: found {} active servers, while should be {}')#.format(len(nmapscan()), servers_count))
+            pdu_command(pdu, 'on {}'.format(pgroup))
+            failoverresult['PDU-{}'.format(pgroup)]['result'] = 'fail'
+            #pdu_command(pdu, 'power outlets all on')
+            time.sleep(10)
 
 
 # # Switched CDU: envmon
@@ -96,7 +96,6 @@ for wpdu in pdus:
     for pgroup in pgroups:
         print_to_gui('Checking wattage and temperature for sensor{}'.format(pgroup))
         # creating sensor record
-
         sensor = failoverresult['PDU-{}'.format(pgroup)]['sensor{}'.format(pgroup)] = {}
         sensorsdata = sensorscheck(wpdu,tempsensnames[pgroup])
         sensor['wattage'] = sensorsdata['wattage']
