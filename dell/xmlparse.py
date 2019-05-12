@@ -38,10 +38,12 @@ allowedPNs = ["M393A2K43CB2-CTD","18ASF2G72PDZ-2G6D1"]
 sensors = {'sensor1': 'Front-Down', 'sensor2': 'Front-Up', 'sensor3': 'Rear-Down', 'sensor4': 'Rear-Up'}
 #PDU's
 # sydney
-pdus=['10.160.231.171', '10.160.231.170', '10.160.231.169', '10.160.231.168']
+pdus={'10.160.231.171': [1, 2], '10.160.231.170': [3, 4]}#, '10.160.231.169', '10.160.231.168']
+tempsensnames = {1: 'A', 2: 'B', 3: 'A', 4: 'B'}
 #pdus=['192.168.1.254']
+
 #melbourne
-# pdus=['10.176.231.171', '10.176.231.170', '10.176.231.169', '10.176.231.168']
+# pdus={'10.176.231.171':[1, 2], '10.176.231.170':[3,4]} #, '10.176.231.169', '10.176.231.168']
 
 #idrac range
 #sydney
@@ -58,7 +60,8 @@ additional_conf_collect.update({"Disk.Virtual.0:RAID.Integrated.1-1": ['Name', '
 # summary object init
 summary = {}
 errors={}
-failoverresult= {'PDU-{}'.format(num): {'result': 'na'} for num, pdu in enumerate(pdus, 1)}
+# failoverresult= {'PDU-{}'.format(num): {'result': 'na'} for num, pdu in enumerate(pdus, 1)}
+failoverresult= {'PDU-1': {'result': 'na'},'PDU-2': {'result': 'na'},'PDU-3': {'result': 'na'},'PDU-4': {'result': 'na'}}
 #harware collection constructor
 hw_collect=[]
 hw_collect.append({'displayname': 'ServiceTag', 'classname': 'DCIM_SystemView', 'name': 'ServiceTag', 'excluded_for_validation': 2})
@@ -208,7 +211,7 @@ def main(argv):
         print('.' * 40)
         return ipl
     #pdu operations
-    #servertec
+    #servertec ver
     def sendcom(tel, cmd=b""):
         tel.write(cmd)
         tel.write(bytes("\r", encoding='ascii'))
@@ -225,27 +228,29 @@ def main(argv):
     def pdu_command(host, cmd):
         tel = telnetlib.Telnet(host)
         login(tel)
-        #print(cmd.encode())
-        sendcom(tel,cmd.encode())
-        #tel.read_until(b"Command successful")
-        #print('y/n')
-        #sendcom(tel,'y'.encode())
+        # print(cmd.encode())
+        sendcom(tel, cmd.encode())
+        # tel.read_until(b"Command successful")
+        # print('y/n')
+        # sendcom(tel,'y'.encode())
         tel.read_until(b"Switched CDU:")
         sendcom(tel, b'exit')
 
-    def sensorscheck(pdu):
+    def sensorscheck(pdu, grp):
         with telnetlib.Telnet(pdu) as t:
             t.read_until(b'Username:')
-            t.write(b'root\n')
+            t.write(b'admn\n')
             t.read_until(b'Password:')
             t.write(b'wildcat1\n')
             t.read_until(b"Switched CDU:")
             t.write(b'envmon\n')
             temp_output = t.read_until(b"Switched CDU:").decode('utf-8')
+            print(temp_output)
             t.write(b'sysstat\n')
             pow_output = t.read_until(b"Switched CDU:").decode('utf-8')
-            temp = re.search('.*A1\s*Temp_Humid_Sensor_A1\s*(\d+).*', temp_output).group(1)
-            wattage = re.search('Total Power Consumption:\s+(\d+)', pow_output).group(1)
+            print(pow_output)
+            temp = re.search('.*{}1\s*Temp_Humid_Sensor_{}1\s*(\d+|Not Found).*'.format(grp, grp), temp_output).group(1)
+            wattage = re.search('Total Power Consumption:\s+(\d+|Not Found)', pow_output).group(1)
             return {'wattage': wattage, 'temp': temp}
         #raritan ver
         #
@@ -288,35 +293,55 @@ def main(argv):
         #         temp = re.search('Reading:\s+(\d+\.\d)', temp_output).group(1)
         #         wattage = re.search('Active Power:\s+(\d+)', pow_output).group(1)
         #         return {'wattage': wattage, 'temp': temp}
-
+    #servertech ver
     def failover_check():
         print_to_gui('Starting pdu failover check')
-        #building data structure
-        #{'PDU-1':{'result':'pass','sensor1':{'wattage':'100','temp':'27'},'sensor2':{'wattage':'100','temp':'27'}}, 'PDU-2':...}
-        #executing
-        for num, pdu in enumerate(pdus, 1):
-            print('System powered without PDU-{}'.format(num))
-            print_to_gui('turning off PDU-{}'.format(num))
-            pdu_command(pdu, 'power outlets all off')
+
+    for pdu in pdus:
+        pgroups = pdus[pdu]
+        for pgroup in pgroups:
+            print('System powered without PDU-{}'.format(pgroup))
+            print_to_gui('turning off PDU-{}'.format(pgroup))
+            pdu_command(pdu, 'off {}'.format(pgroup))
             time.sleep(5)
-            if len(nmapscan()) == servers_count:
-                print_to_gui('All {} system servers are online'.format(len(nmapscan())))
-                pdu_command(pdu, 'power outlets all on')
-                time.sleep(12)
-                for wnum, wpdu in enumerate(pdus, 1):
-                    #print_to_gui('Checking wattage and temperature for sensor{}'.format(wnum))
-                    #creating sensor record
-                    sensor = failoverresult['PDU-{}'.format(num)]['sensor{}'.format(wnum)] = {}
-                    sensorsdata = sensorscheck(wpdu)
-                    sensor['wattage'] = sensorsdata['wattage']
-                    sensor['temp'] = sensorsdata['temp']
-                failoverresult['PDU-{}'.format(num)]['result'] = 'pass'
+            # if len(nmapscan()) == servers_count:
+            if True:
+                print_to_gui('All {} system servers are online')  # .format(len(nmapscan())))
+                pdu_command(pdu, 'on {}'.format(pgroup))
+                time.sleep(30)
+                failoverresult['PDU-{}'.format(pgroup)]['result'] = 'pass'
             else:
-                print_to_gui('Error: found {} active servers, while should be {}'.format(len(nmapscan()), servers_count))
-                pdu_command(pdu, 'power outlets all on')
-                failoverresult['PDU-{}'.format(num)]['result']='fail'
-                pdu_command(pdu, 'power outlets all on')
-                time.sleep(12)
+                print_to_gui(
+                    'Error: found {} active servers, while should be {}')  # .format(len(nmapscan()), servers_count))
+                pdu_command(pdu, 'on {}'.format(pgroup))
+                failoverresult['PDU-{}'.format(pgroup)]['result'] = 'fail'
+                # pdu_command(pdu, 'power outlets all on')
+                time.sleep(30)
+
+
+                # # Switched CDU: envmon
+                #
+                # Environmental Monitor .A
+                #    Name: Environmental_Monitor_A          Status: Normal
+                #
+                #    Temperature/Humidity Sensors
+                #
+                #       ID    Name                          Temperature    Humidity
+                #       .A1   Temp_Humid_Sensor_A1          Not Found      Not Found
+                #       .A2   Temp_Humid_Sensor_A2          Not Found      Not Found
+                #
+                #    Command successful
+
+    for wpdu in pdus:
+        pgroups = pdus[wpdu]
+        for pgroup in pgroups:
+            print_to_gui('Checking wattage and temperature for sensor{}'.format(pgroup))
+            # creating sensor record
+
+            sensor = failoverresult['PDU-{}'.format(pgroup)]['sensor{}'.format(pgroup)] = {}
+            sensorsdata = sensorscheck(wpdu, tempsensnames[pgroup])
+            sensor['wattage'] = sensorsdata['wattage']
+            sensor['temp'] = sensorsdata['temp']
 
     def disbutt(opt):
         for bu in buttons:
@@ -504,7 +529,8 @@ def main(argv):
             writesummary(workbook, summary_report)
             #reinit of data placeholders
             summary = {}
-            failoverresult = {'PDU-{}'.format(num): {'result': 'na'} for num, pdu in enumerate(pdus, 1)}
+            failoverresult = {'PDU-1': {'result': 'na'}, 'PDU-2': {'result': 'na'}, 'PDU-3': {'result': 'na'},
+                              'PDU-4': {'result': 'na'}}
             print_to_gui(' - Process finished. Please inspect {}'.format(repname))
 
 
