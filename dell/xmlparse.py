@@ -38,20 +38,14 @@ allowedPNs = ["M393A2K43CB2-CTD","18ASF2G72PDZ-2G6D1"]
 sensors = {'sensor1': 'Front-Down', 'sensor2': 'Front-Up', 'sensor3': 'Rear-Down', 'sensor4': 'Rear-Up'}
 tempsensnames = {1: 'A', 2: 'B', 3: 'A', 4: 'B'}
 
-#PDU's
-
 # sydney
 pdus={'10.160.231.171': [1, 2], '10.160.231.169': [3, 4]}
-
+idrac_ips= '10.160.231.172-211'
 
 #melbourne
-# pdus={'10.176.231.171':[1, 2], '10.176.231.169':[3,4]}
+#pdus={'10.176.231.171':[1, 2], '10.176.231.169':[3,4]}
+#idrac_ips= '10.176.231.172-211'
 
-#idrac range
-#sydney
-# idrac_ips= '10.160.231.172-211'
-#melbourne
-idrac_ips= '10.176.231.172-211'
 #servers count for power test
 servers_count=40
 #additional attributes to collect for dynamic configuration data (FQDD, <!-- <Attribute Name=" ....)
