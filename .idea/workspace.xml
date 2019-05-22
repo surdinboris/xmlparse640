@@ -2,8 +2,113 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8585d4ec-eb38-479f-a740-120601a36ab2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/.~lock.summary_25042019_10-57-23.xlsx#" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/.~lock.summary_25042019_10-58-29.xlsx#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/HardwareInventory.golden" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TN2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TN2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TN2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TN2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TP2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TP2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TP2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TP2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TQ2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TQ2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TQ2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TQ2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TR2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TR2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TR2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TR2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TS2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TS2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TS2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TS2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TT2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TT2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TT2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TT2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TW2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TW2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TW2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1TW2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VM2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VM2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VM2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VM2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VN2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VN2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VN2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VN2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VP2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VP2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VP2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VP2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VQ2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VQ2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VQ2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VQ2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VR2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VR2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VR2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VR2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VS2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VS2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VS2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VS2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VT2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VT2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VT2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VT2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VV2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VV2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VV2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VV2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VW2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VW2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VW2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1VW2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WM2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WM2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WM2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WM2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WN2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WN2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WN2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WN2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WP2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WP2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WP2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WP2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WQ2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WQ2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WQ2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WQ2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WR2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WR2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WR2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WR2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WS2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WS2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WS2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WS2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WT2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WT2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WT2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WT2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WV2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WV2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WV2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1WV2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1XM2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1XM2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1XM2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1XM2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1XN2S2_config_report_conf_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1XN2S2_config_report_conf_passed_report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1XN2S2_hwinvent_report_hw_passed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dell/passed/C1XN2S2_hwinvent_report_hw_passed_report.xlsx" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dell/ConfigurationInventory.golden" afterPath="$PROJECT_DIR$/dell/ConfigurationInventory.golden" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dell/xmlparse.py" afterPath="$PROJECT_DIR$/dell/xmlparse.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +139,8 @@
       <file leaf-file-name="xmlparse.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dell/xmlparse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="236" column="9" lean-forward="false" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
+            <state relative-caret-position="21">
+              <caret line="81" column="104" lean-forward="false" selection-start-line="81" selection-start-column="91" selection-end-line="81" selection-end-column="104" />
               <folding>
                 <element signature="e#53#81#0" expanded="true" />
               </folding>
@@ -46,8 +151,8 @@
       <file leaf-file-name="pdutest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pdutest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+            <state relative-caret-position="2121">
+              <caret line="103" column="21" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -142,10 +247,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="229" />
-    <option name="y" value="58" />
+    <option name="x" value="-59" />
+    <option name="y" value="48" />
     <option name="width" value="1600" />
-    <option name="height" value="1029" />
+    <option name="height" value="1221" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -533,16 +638,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="229" y="58" width="1600" height="1029" extended-state="0" />
+    <frame x="-59" y="48" width="1600" height="1221" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1309987" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13246754" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2777778" sideWeight="0.5106496" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.02895323" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32666665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2279496" sideWeight="0.48935038" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2279496" sideWeight="0.48935038" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24920128" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12555556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -672,34 +777,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xmlparse.py" />
     <entry file="file://$PROJECT_DIR$/HardwareInventory_differ.xml" />
-    <entry file="file://$PROJECT_DIR$/dell/passed/C1TP2S2_config_report_conf_passed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dell/passed/C1TN2S2_config_report_conf_passed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="353" column="50" lean-forward="false" selection-start-line="353" selection-start-column="50" selection-end-line="353" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dell/passed/C1TN2S2_hwinvent_report_hw_passed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="3697" column="34" lean-forward="true" selection-start-line="3697" selection-start-column="34" selection-end-line="3697" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dell/passed/C1TS2S2_hwinvent_report_hw_passed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="3671" column="21" lean-forward="false" selection-start-line="3671" selection-start-column="21" selection-end-line="3671" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dell/passed/C1TP2S2_config_report_conf_passed.xml" />
+    <entry file="file://$PROJECT_DIR$/dell/passed/C1TN2S2_config_report_conf_passed.xml" />
+    <entry file="file://$PROJECT_DIR$/dell/passed/C1TN2S2_hwinvent_report_hw_passed.xml" />
+    <entry file="file://$PROJECT_DIR$/dell/passed/C1TS2S2_hwinvent_report_hw_passed.xml" />
     <entry file="file://$PROJECT_DIR$/dell/turn_off_all.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/re.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -750,7 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1657">
           <caret line="251" column="30" lean-forward="false" selection-start-line="251" selection-start-column="16" selection-end-line="251" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,8 +844,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pdutest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+        <state relative-caret-position="2121">
+          <caret line="103" column="21" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
@@ -774,8 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dell/xmlparse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="236" column="9" lean-forward="false" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
+        <state relative-caret-position="21">
+          <caret line="81" column="104" lean-forward="false" selection-start-line="81" selection-start-column="91" selection-end-line="81" selection-end-column="104" />
           <folding>
             <element signature="e#53#81#0" expanded="true" />
           </folding>
