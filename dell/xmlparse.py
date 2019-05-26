@@ -56,6 +56,7 @@ additional_conf_collect.update({"Disk.Virtual.0:RAID.Integrated.1-1": ['Name', '
 # additional_conf_collect.update({"iDRAC.Embedded.1": ["IPv4Static.1#Netmask"]})
 # summary object init
 summary = {}
+projdata={}
 errors={}
 # failoverresult= {'PDU-{}'.format(num): {'result': 'na'} for num, pdu in enumerate(pdus, 1)}
 failoverresult= {'PDU-1': {'result': 'na'},'PDU-2': {'result': 'na'},'PDU-3': {'result': 'na'},'PDU-4': {'result': 'na'}}
@@ -294,6 +295,7 @@ def main(argv):
         #         temp = re.search('Reading:\s+(\d+\.\d)', temp_output).group(1)
         #         wattage = re.search('Active Power:\s+(\d+)', pow_output).group(1)
         #         return {'wattage': wattage, 'temp': temp}
+
     #servertech ver
     def failover_check():
         print_to_gui('Starting pdu failover check')
@@ -326,16 +328,7 @@ def main(argv):
                         sensorsdata = sensorscheck(wpdu, tempsensnames[wpgroup])
                         sensor['wattage'] = sensorsdata['wattage']
                         sensor['temp'] = sensorsdata['temp']
-        # #checking sensors
-        # for wpdu in pdus:
-        #     pgroups = pdus[wpdu]
-        #     for pgroup in pgroups:
-        #         print_to_gui('Checking wattage and temperature for sensor{}'.format(pgroup))
-        #         # creating sensor record
-        #         sensor = failoverresult['PDU-{}'.format(pgroup)]['sensor{}'.format(pgroup)] = {}
-        #         sensorsdata = sensorscheck(wpdu, tempsensnames[pgroup])
-        #         sensor['wattage'] = sensorsdata['wattage']
-        #         sensor['temp'] = sensorsdata['temp']
+
     def disbutt(opt):
         for bu in buttons:
             bu['state'] = opt
@@ -347,6 +340,11 @@ def main(argv):
     checkfailover = IntVar(value=1)
     spec_ip = StringVar()
     spec_pwd = StringVar()
+    # project data
+    project = StringVar()
+    pn = StringVar()
+    rackn = StringVar()
+
     #telad_logo = ImageTk.PhotoImage(Image.open(os.path.join(os.getcwd(), "logo.gif")))
     liveperson_logo = ImageTk.PhotoImage(Image.open(os.path.join(os.getcwd(), "liveperson.gif")))
     _root.title('Liveperson dell inventory tool')
@@ -359,15 +357,33 @@ def main(argv):
     _liveperson_logo.grid(row=0, padx=5, pady=5, column=0, sticky=(W, N))
     # output part
     _textboxframe = tk.LabelFrame(_mainframe, text='Work log')
-    _textboxframe.grid(row=0, padx=5, pady=5, column=1, rowspan=3, sticky=(W, N))
+    _textboxframe.grid(row=1, padx=5, pady=5, column=1, rowspan=4, sticky=(W, N))
     _textboxframe.columnconfigure(0, weight=1)
     _textboxframe.rowconfigure(0, weight=1)
-    _texbox = tkst.ScrolledText(_textboxframe, wrap='word', width=35, height=20, state='disabled')
-    _texbox.grid(row=0, column=1, sticky=(W, N))
-    #options
+    _texbox = tkst.ScrolledText(_textboxframe, wrap='word', width=35, height=30, state='disabled')
+    _texbox.grid(row=1, column=1, sticky=(W, N))
+    #report label data
+    _reportoptsframe = tk.LabelFrame(_mainframe, text='Report label data')
+    _reportoptsframe.grid(row=1, padx=3, pady=3, column=0, sticky=(W, N))
 
+    __RackText = Label(_reportoptsframe, text='Project')
+    __RackText.grid(row=0, padx=3, pady=3, column=0, sticky=(E, N))
+    _Rack = Entry(_reportoptsframe, textvariable=project)
+    _Rack.grid(row=0, padx=3, pady=3, column=1, sticky=(E, N))
+
+    __RackText = Label(_reportoptsframe, text='P/N')
+    __RackText.grid(row=1, padx=3, pady=3, column=0, sticky=(E, N))
+    _Rack = Entry(_reportoptsframe, textvariable=pn)
+    _Rack.grid(row=1, padx=3, pady=3, column=1, sticky=(E, N))
+
+    __RackText = Label(_reportoptsframe, text='RACK #')
+    __RackText.grid(row=2, padx=3, pady=3, column=0, sticky=(E, N))
+    _Rack = Entry(_reportoptsframe, textvariable=rackn)
+    _Rack.grid(row=2, padx=3, pady=3, column=1, sticky=(E, N))
+
+    #Network run options
     _optionsframe = tk.LabelFrame(_mainframe, text='Network run options')
-    _optionsframe.grid(row=1, padx=3, pady=3, column=0, sticky=(W, N))
+    _optionsframe.grid(row=2, padx=3, pady=3, column=0, sticky=(W, N))
 
     _ipText = Label(_optionsframe, text='IP:')
     _ipText.grid(row=0, padx=3, pady=3, column=0, sticky=(E, N))
@@ -376,37 +392,38 @@ def main(argv):
     _ipaddress.grid(row=0, padx=3, pady=3, column=1, sticky=(E, N))
 
     _pwdText = Label(_optionsframe, text='Pass:')
-    _pwdText.grid(row=1, padx=3, pady=3, column=0, sticky=(E, N))
+    _pwdText.grid(row=2, padx=3, pady=3, column=0, sticky=(E, N))
 
     _password = Entry(_optionsframe, textvariable=spec_pwd)
-    _password.grid(row=1, padx=3, pady=3, column=1, sticky=(E, N))
+    _password.grid(row=2, padx=3, pady=3, column=1, sticky=(E, N))
 
     _retrieveinitial = Checkbutton(_optionsframe, text="Initial inventory", variable=retrieveinitial)
-    _retrieveinitial.grid(row=2, padx=3, pady=3, column=0, columnspan=2, sticky=(W, N))
+    _retrieveinitial.grid(row=3, padx=3, pady=3, column=0, columnspan=2, sticky=(W, N))
 
     _applygolden = Checkbutton(_optionsframe, text="Apply golden settings", variable=applygolden)
-    _applygolden.grid(row=3, padx=3, pady=3, column=0, columnspan=2, sticky=(W, N))
+    _applygolden.grid(row=4, padx=3, pady=3, column=0, columnspan=2, sticky=(W, N))
 
     _collectfinal= Checkbutton(_optionsframe, text="Collect final report", variable=collectfinal)
-    _collectfinal.grid(row=4, padx=3, pady=3, column=0, columnspan=2, sticky=(W, N))
+    _collectfinal.grid(row=5, padx=3, pady=3, column=0, columnspan=2, sticky=(W, N))
 
     _collectfinal= Checkbutton(_optionsframe, text="Check PDU failover", variable=checkfailover)
-    _collectfinal.grid(row=5, padx=3, pady=3, column=0, columnspan=2, sticky=(W, N))
-    # testing part
+    _collectfinal.grid(row=6, padx=3, pady=3, column=0, columnspan=2, sticky=(W, N))
+
+    # testing
     _testingframe = tk.LabelFrame(_mainframe, text='Testing')
-    _testingframe.grid(row=2, padx=3, pady=3, column=0,  sticky=(W,  N))
+    _testingframe.grid(row=3, padx=3, pady=3, column=0,  sticky=(W,  N))
 
     # _testingframe.columnconfigure(1, weight=10)
     # _testingframe.rowconfigure(1, weight=10)
     #control
     # test buttons - start stop test
-    _startnetbutton = tk.Button(_testingframe, text='Start (network)',width=20, height=2,
+    _startnetbutton = tk.Button(_testingframe, text='Start (network)',width=22, height=2,
                                 command = lambda: start('network'))
-    _startnetbutton.grid(row=0, padx=3, pady=3, column=0, sticky=(W, N))
+    _startnetbutton.grid(row=0, padx=3, pady=3, column=0, sticky=(E, N))
 
-    _startofflinebutton = tk.Button(_testingframe, text='Start (offline)', width=20, height=2,
+    _startofflinebutton = tk.Button(_testingframe, text='Start (offline)', width=22, height=2,
                                     command = lambda: start('offline'))
-    _startofflinebutton.grid(row=1, padx=3, pady=3, column=0, sticky=(W, N))
+    _startofflinebutton.grid(row=1, padx=3, pady=3, column=0, sticky=(E, N))
 
     #to be implemented
     # _stopbutton = tk.Button(_testingframe, text='Stop execution', width=20, height=2,
@@ -437,6 +454,7 @@ def main(argv):
         workbook = xlsxwriter.Workbook(repname)
         #prepairing summary report first
         summary_report=workbook.add_worksheet('summary_report')
+        projdata['projprop']={'project':project.get(), 'pn': pn.get(), 'rackn':rackn.get()}
         if mode == 'network':
             #########Network run
             # retrieving hosts information
@@ -764,10 +782,16 @@ def writesummary(workbook,worksheet):
         except KeyError:
             maxwidth[coord[0]] = len(str(val))
         return str(val)
+    #writing head
+    worksheet.write('A1', 'Project', header_cell)
+    worksheet.write('A2', 'P/N', header_cell)
+    worksheet.write('A3', 'RACK #', header_cell)
+    worksheet.write('B1', str(projdata['projprop']['project']), header_cell)
+    worksheet.write('B2', str(projdata['projprop']['pn']), header_cell)
+    worksheet.write('B3', str(projdata['projprop']['rackn']), header_cell)
 
     #print(summary)
-
-    maxheight = 2
+    maxheight = 5
     for result in summary:
         print('Summary detected for {}'.format(result))
         ServiceTag = result
@@ -841,13 +865,13 @@ def writesummary(workbook,worksheet):
                     if key != 'golden':
                         if value == 1:
                             # writing head
-                            if maxheight == 2:
-                                coords = '{}1'.format(colnum_string(ind))
+                            if maxheight == 5:
+                                coords = '{}4'.format(colnum_string(ind))
                                 worksheet.write(coords, toStr(hwfamily, coords), header_cell)
                         elif value in [0,5,4]:
                             hwfamily_pass=0
-                            if maxheight == 2:
-                                coords = '{}1'.format(colnum_string(ind))
+                            if maxheight == 5:
+                                coords = '{}4'.format(colnum_string(ind))
                                 worksheet.write(coords, toStr(hwfamily, coords), header_cell)
                             # print('>>',hwfamily, hwitem)
                             if key == 'additional':
@@ -858,9 +882,9 @@ def writesummary(workbook,worksheet):
                             hwfamily_pass = 2
                             if hwfamily == "ServiceTag":
                                 # writing head
-                                if maxheight == 2:
+                                if maxheight == 5:
                                     # writing value
-                                    coords = '{}1'.format(colnum_string(ind))
+                                    coords = '{}4'.format(colnum_string(ind))
                                     worksheet.write(coords, toStr(hwfamily, coords), header_cell)
                                 coords = '{}{}'.format(colnum_string(ind),maxheight)
                                 worksheet.write(coords, toStr(key, coords), black_cell)
@@ -869,9 +893,9 @@ def writesummary(workbook,worksheet):
                                 # worksheet.write_comment(coords, ip)
                                 ind = ind+1
                                 correction = correction+1
-                                if maxheight == 2:
+                                if maxheight == 5:
                                     # writing value
-                                    coords = '{}1'.format(colnum_string(ind))
+                                    coords = '{}4'.format(colnum_string(ind))
                                     worksheet.write(coords, toStr('System IP', coords), header_cell)
                                 coords = '{}{}'.format(colnum_string(ind), maxheight)
                                 worksheet.write(coords, toStr(ip,coords),black_cell)
@@ -880,9 +904,9 @@ def writesummary(workbook,worksheet):
                                 corrflag = False
                             elif hwfamily == "HostName":
                                 # writing head
-                                if maxheight == 2:
+                                if maxheight == 5:
                                     # writing value
-                                    coords = '{}1'.format(colnum_string(ind))
+                                    coords = '{}4'.format(colnum_string(ind))
                                     worksheet.write(coords, toStr(hwfamily, coords), header_cell)
                                 coords = '{}{}'.format(colnum_string(ind),maxheight)
                                 worksheet.write(coords, toStr(key, coords), black_cell)
@@ -904,30 +928,30 @@ def writesummary(workbook,worksheet):
         #manual index correction before configuration appending
         ind = ind + 1
         if conf_passed == 1:
-            if maxheight == 2:
-                coords = '{}1'.format(colnum_string(ind))
+            if maxheight == 5:
+                coords = '{}4'.format(colnum_string(ind))
                 worksheet.write(coords, toStr('Configuration', coords), header_cell)
             coords = '{}{}'.format(colnum_string(ind), maxheight)
             worksheet.write(coords, toStr('conf. pass', coords), green_cell)
 
         if conf_passed == 0:
-            if maxheight == 2:
-                coords = '{}1'.format(colnum_string(ind))
+            if maxheight == 5:
+                coords = '{}4'.format(colnum_string(ind))
                 worksheet.write(coords, toStr('Configuration', coords), header_cell)
             coords = '{}{}'.format(colnum_string(ind), maxheight)
             worksheet.write(coords, toStr('conf. fail', coords), red_cell)
             worksheet.write_comment(coords, str(conf_error))
         #writing link to Hardware report
         ind = ind + 1
-        if maxheight == 2:
-            coords = '{}1'.format(colnum_string(ind))
+        if maxheight == 5:
+            coords = '{}4'.format(colnum_string(ind))
             worksheet.write(coords, toStr('Hardware report', coords), header_cell)
         coords = '{}{}'.format(colnum_string(ind), maxheight)
         worksheet.write(coords, 'internal:\'{}_hwinvent_report\'!A1'.format(ServiceTag))
         #writing link to Config report
         ind = ind + 1
-        if maxheight == 2:
-            coords = '{}1'.format(colnum_string(ind))
+        if maxheight == 5:
+            coords = '{}4'.format(colnum_string(ind))
             worksheet.write(coords, toStr('Config report', coords), header_cell)
         coords = '{}{}'.format(colnum_string(ind), maxheight)
         worksheet.write(coords, 'internal:\'{}_config_report\'!A1'.format(ServiceTag))
