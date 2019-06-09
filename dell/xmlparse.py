@@ -33,7 +33,7 @@ running = True
 hardware_golden = 'HardwareInventory.golden'
 configuration_golden = 'ConfigurationInventory.golden'
 #PN patch - in case of not only golden's PN's accepted
-allowedPNs = ["M393A2K43CB2-CTD","18ASF2G72PDZ-2G6D1"]
+allowedPNs = ["M393A2K43CB2-CTD","18ASF2G72PDZ-2G6D1", "HMA82GR7AFR8N-VK"]
 #pdus/sensors lists
 sensors = {'sensor1': 'Front-Down', 'sensor2': 'Front-Up', 'sensor3': 'Rear-Down', 'sensor4': 'Rear-Up'}
 tempsensnames = {1: 'A', 2: 'B', 3: 'A', 4: 'B'}

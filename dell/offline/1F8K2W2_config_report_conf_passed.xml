@@ -9,7 +9,7 @@
  <Attribute Name="IPMILan.1#CommunityName">public</Attribute>
  <Attribute Name="IPMILan.1#AlertEnable">Disabled</Attribute>
  <Attribute Name="Users.2#UserName">root</Attribute>
- <!-- <Attribute Name="Users.2#Password">******</Attribute> -->
+  <Attribute Name="Users.2#Password">*ws</Attribute>
  <Attribute Name="Users.2#Privilege">511</Attribute>
  <Attribute Name="Users.2#IpmiLanPrivilege">Administrator</Attribute>
  <Attribute Name="Users.2#IpmiSerialPrivilege">Administrator</Attribute>
